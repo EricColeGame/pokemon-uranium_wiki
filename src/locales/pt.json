@@ -1,1 +1,527 @@
-{}
+{
+  "site": {
+    "name": "Pokemon Uranium Wiki",
+    "shortName": "Pokemon Uranium",
+    "tagline": "Pokédex, mapas de Tandor, guias do tipo Nuclear e detonados",
+    "description": "Explore Pokemon Uranium com uma Pokédex completa, mapas da região de Tandor, Pokémon do tipo Nuclear, detonados, detalhes de evolução, golpes, itens e dicas de montagem de equipe.",
+    "legalNotice": "Wiki de fãs não oficial. Não é afiliada à Nintendo, The Pokémon Company nem à Game Freak."
+  },
+  "nav": {
+    "home": "Início",
+    "menu": "Menu",
+    "toggleTheme": "Alternar tema",
+    "guide": "Guia",
+    "characters": "Personagens",
+    "mechanics": "Mecânicas",
+    "progression": "Progresso",
+    "items": "Itens",
+    "controls": "Controles",
+    "community": "Comunidade"
+  },
+  "guide": {
+    "overviewTitle": "Guia de Pokemon Uranium",
+    "overviewDescription": "Comece por aqui com detonados para iniciantes, o melhor inicial, as equipes dos líderes de ginásio, a Pokédex completa e as rotas de pós-jogo de Pokemon Uranium."
+  },
+  "characters": {
+    "overviewTitle": "Personagens de Pokemon Uranium",
+    "overviewDescription": "Conheça a Pokédex de Tandor: os melhores Pokémon, Fakemon originais, lendários, Megaevoluções e criaturas do tipo Nuclear."
+  },
+  "mechanics": {
+    "overviewTitle": "Mecânicas de Pokemon Uranium",
+    "overviewDescription": "Entenda como Pokemon Uranium funciona: níveis de evolução, evoluções por troca, treino de EV, chances de shiny, Presente Misterioso e a tabela de tipos."
+  },
+  "progression": {
+    "overviewTitle": "Progresso em Pokemon Uranium",
+    "overviewDescription": "Planeje a longa escalada com limites de nível, pontos de farm de EXP, Estrada da Vitória, Elite dos Quatro e missões secundárias."
+  },
+  "items": {
+    "overviewTitle": "Itens de Pokemon Uranium",
+    "overviewDescription": "Encontre os itens-chave que aceleram a jornada: Lucky Egg, Heart Scale, Ability Capsule e Mega Pedras."
+  },
+  "controls": {
+    "overviewTitle": "Controles de Pokemon Uranium",
+    "overviewDescription": "Configure como você joga com suporte a controle, dicas de aceleração, versões para Android e configuração do JoiPlay."
+  },
+  "community": {
+    "overviewTitle": "Comunidade de Pokemon Uranium",
+    "overviewDescription": "Participe da comunidade de Pokemon Uranium pelo Discord oficial, pelo subreddit, por reviews do jogo e por notícias de atualização."
+  },
+  "home": {
+    "meta": {
+      "title": "Wiki de Pokemon Uranium: Pokédex, guias e Fakemon",
+      "description": "Explore Pokemon Uranium com uma Pokédex completa, mapas da região de Tandor, Pokémon do tipo Nuclear, detonados, detalhes de evolução, golpes, itens e dicas de montagem de equipe."
+    },
+    "hero": {
+      "eyebrow": "Aventura RPG de Pokémon feita por fãs",
+      "title": "Pokemon Uranium Wiki",
+      "description": "Explore a região de Tandor, descubra Pokémon originais, domine as batalhas do tipo Nuclear, complete a Pokédex e siga detonados para ginásios, missões, evoluções e conteúdo de pós-jogo.",
+      "stats": [
+        "150+ Pokémon originais",
+        "8 ginásios",
+        "Lançado em 2016",
+        "Plataforma PC"
+      ],
+      "primaryCta": "Guia para iniciantes",
+      "secondaryCta": "Pokédex e Fakemon",
+      "tertiaryCta": "Jogar no PC",
+      "videoLabel": "Prévia de gameplay"
+    },
+    "updates": {
+      "title": "Últimas atualizações",
+      "browse": "Ver todos os guias",
+      "viewAll": "Ver tudo"
+    },
+    "start": {
+      "eyebrow": "Comece por aqui",
+      "title": "Sua jornada em Pokemon Uranium",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Guia para iniciantes",
+          "description": "Aprenda como Pokemon Uranium começa em Moki Town: escolha seu inicial com o Professor Bamb'o, aprenda o básico das batalhas e siga a rota inicial de Tandor sem perder nenhum passo."
+        },
+        {
+          "number": "2",
+          "title": "Melhor Pokémon inicial",
+          "description": "Compare Orchynx, Raptorch e Eletux antes de decidir. Todos os iniciais de Tandor têm dois tipos e evoluem uma vez, então essa escolha define toda a sua equipe."
+        },
+        {
+          "number": "3",
+          "title": "Nivelamento mais rápido",
+          "description": "Acompanhe a curva de níveis agressiva de Tandor com os melhores pontos de farm de EXP, revanches contra treinadores e rotas de treino antes de cada ginásio."
+        },
+        {
+          "number": "4",
+          "title": "Como evoluir",
+          "description": "Entenda a evolução por nível, os métodos com pedra e amizade, e as evoluções por troca para que nenhum membro da sua equipe fique sem evoluir mais do que deveria."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Páginas populares",
+      "title": "Em alta agora",
+      "quickLinks": [
+        "Guia para iniciantes",
+        "Pokédex",
+        "Iniciais",
+        "Líderes de ginásio"
+      ],
+      "cards": [
+        {
+          "badge": "Iniciante",
+          "title": "Guia para iniciantes",
+          "description": "Seus primeiros passos em Moki Town, as rotas iniciais e o básico das batalhas que todo novo treinador precisa.",
+          "href": "/guide/pokemon-uranium-walkthrough"
+        },
+        {
+          "badge": "Popular",
+          "title": "Pokédex e Fakemon",
+          "description": "Todas as espécies de Tandor com números da dex, tipos, stats base e famílias evolutivas.",
+          "href": "/guide/pokemon-uranium-pokedex"
+        },
+        {
+          "badge": "Popular",
+          "title": "Melhor inicial",
+          "description": "Orchynx, Raptorch ou Eletux: compare os três iniciais e suas formas finais.",
+          "href": "/guide/pokemon-uranium-starters"
+        },
+        {
+          "badge": "Guia",
+          "title": "Tabela de tipos",
+          "description": "Tabela completa de efetividade de Uranium, incluindo as forças e fraquezas do tipo Nuclear.",
+          "href": "/mechanics/pokemon-uranium-type-chart"
+        },
+        {
+          "badge": "Guia",
+          "title": "Líderes de ginásio",
+          "description": "As oito insígnias de Tandor, as equipes dos líderes e os counters recomendados em ordem.",
+          "href": "/guide/pokemon-uranium-gym-leaders"
+        },
+        {
+          "badge": "Atualizado",
+          "title": "Melhores Pokémon (tier list)",
+          "description": "Os picks mais fortes para a história e o pós-jogo, classificados do tier S ao tier C.",
+          "href": "/characters/pokemon-uranium-best-pokemon"
+        },
+        {
+          "badge": "Popular",
+          "title": "Pokémon do tipo Nuclear",
+          "description": "Como o tipo Nuclear funciona, suas formas corrompidas, seus melhores golpes e como curá-las.",
+          "href": "/characters/pokemon-uranium-nuclear-pokemon"
+        },
+        {
+          "badge": "Novo",
+          "title": "Farm de EXP",
+          "description": "Os melhores pontos de treino e os níveis de referência antes de cada ginásio importante de Tandor.",
+          "href": "/progression/pokemon-uranium-exp-farming"
+        },
+        {
+          "badge": "Atualizado",
+          "title": "Guia de atualização",
+          "description": "Notas de patch, histórico de versões e como a comunidade mantém Tandor vivo em 2026.",
+          "href": "/community/pokemon-uranium-update"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "O que é Pokemon Uranium?",
+      "paragraphs": [
+        "Pokemon Uranium é um RPG gratuito de captura de monstros feito por fãs e ambientado na região original de Tandor. Desenvolvido ao longo de cerca de nove anos por uma equipe de voluntários e lançado em agosto de 2016, ele traz mais de 150 Pokémon originais, um desafio completo de oito ginásios e seu próprio tipo Nuclear exclusivo, que nenhum jogo oficial jamais usou.",
+        "Você percorre Tandor conquistando insígnias de ginásio, capturando e evoluindo uma Pokédex personalizada de Fakemon e montando uma equipe em torno de combinações de tipos que os jogos principais nunca ensinaram. Nossa wiki cobre o detonado, os iniciais, os níveis de evolução, os líderes de ginásio, a tier list e o pós-jogo para você planejar cada passo da jornada."
+      ],
+      "stats": [
+        {
+          "label": "Desenvolvedor",
+          "value": "Equipe de fãs voluntária"
+        },
+        {
+          "label": "Plataforma",
+          "value": "PC (Windows)"
+        },
+        {
+          "label": "Gênero",
+          "value": "RPG de monstros feito por fãs"
+        },
+        {
+          "label": "Região",
+          "value": "Tandor"
+        },
+        {
+          "label": "Pokémon originais",
+          "value": "150+"
+        },
+        {
+          "label": "Ginásios",
+          "value": "8"
+        },
+        {
+          "label": "Ano de lançamento",
+          "value": "2016"
+        }
+      ],
+      "cta": "Explorar todos os guias"
+    },
+    "explore": {
+      "title": "Explore a wiki de Pokemon Uranium",
+      "description": "Mergulhe em Pokemon Uranium com detonados para cada ginásio de Tandor, um catálogo completo de Pokédex e Fakemon, comparações de iniciais, níveis de evolução, tabelas de tipos e conteúdo de pós-jogo.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Guia para iniciantes de Pokemon Uranium",
+          "description": "Ajude novos jogadores a começar a aventura na região de Tandor, escolher um Pokémon inicial, entender o sistema básico de batalha e avançar pelo desafio dos ginásios. Inclui dicas de início, mecânicas essenciais e erros comuns de iniciante.",
+          "href": "/guide/pokemon-uranium-walkthrough",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Escolha seu inicial com o Professor Bamb'o em Moki Town"
+            },
+            {
+              "label": "2",
+              "detail": "Capture Pokémon iniciais de Tandor e aprenda o básico das batalhas"
+            },
+            {
+              "label": "3",
+              "detail": "Vença o ginásio do tipo Normal da Maria em Nowtoch City para conquistar sua primeira insígnia"
+            },
+            {
+              "label": "4",
+              "detail": "Siga a ordem das rotas para não perder nenhum MO nem nenhum item único"
+            },
+            {
+              "label": "5",
+              "detail": "Salve antes das batalhas importantes e mantenha uma equipe equilibrada e bem nivelada"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Pokédex de Pokemon Uranium",
+          "description": "Explore os Pokémon disponíveis em Uranium, incluindo Fakemon originais, Pokémon do tipo Nuclear, métodos de evolução, habilidades e stats base. Ofereça entradas pesquisáveis para ajudar os jogadores a identificar Pokémon e planejar suas equipes.",
+          "href": "/guide/pokemon-uranium-pokedex",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Ordem da dex",
+              "detail": "Como os números da dex regional de Tandor são organizados"
+            },
+            {
+              "label": "Tipos",
+              "detail": "Os tipos de cada espécie de Tandor, incluindo Nuclear"
+            },
+            {
+              "label": "Stats",
+              "detail": "Stats base para comparar antes de ocupar uma vaga na equipe"
+            },
+            {
+              "label": "Evoluções",
+              "detail": "Famílias evolutivas e o nível em que cada espécie evolui"
+            },
+            {
+              "label": "Fakemon",
+              "detail": "Criaturas originais criadas por fãs, exclusivas de Uranium"
+            },
+            {
+              "label": "Filtros",
+              "detail": "Como filtrar a dex para encontrar um Pokémon rápido"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Pokémon iniciais de Pokemon Uranium",
+          "description": "Compare os Pokémon iniciais disponíveis, suas linhas evolutivas, forças, fraquezas e papéis potenciais ao longo da história. Ajude os jogadores a entender suas opções iniciais e a escolher um parceiro que combine com seu estilo de jogo.",
+          "href": "/guide/pokemon-uranium-starters",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Orchynx",
+              "detail": "Inicial de Planta / Aço que evolui para Metalynx"
+            },
+            {
+              "label": "Raptorch",
+              "detail": "Inicial de Fogo / Terra que se torna o veloz sweeper Archilles"
+            },
+            {
+              "label": "Eletux",
+              "detail": "Inicial de Água / Elétrico que se transforma no tanque Electruxo"
+            },
+            {
+              "label": "Tipos duplos",
+              "detail": "Todos os iniciais de Tandor carregam dois tipos desde o começo"
+            },
+            {
+              "label": "Formas Mega",
+              "detail": "Os três iniciais ganham Megaevoluções mais adiante na jornada"
+            },
+            {
+              "label": "Melhor escolha",
+              "detail": "Como escolher com base no seu estilo de jogo preferido"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Tabela de tipos de Pokemon Uranium",
+          "description": "Ofereça uma referência de batalha para os tipos de Pokémon, incluindo o distintivo tipo Nuclear e suas interações com outros tipos. Mostre a efetividade ofensiva e as fraquezas defensivas em um formato fácil de ler para montar equipes e preparar batalhas.",
+          "href": "/mechanics/pokemon-uranium-type-chart",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Nuclear",
+              "detail": "Super efetivo contra 17 dos 19 tipos do jogo"
+            },
+            {
+              "label": "Aço",
+              "detail": "O único tipo que resiste a Nuclear e devolve dano super efetivo"
+            },
+            {
+              "label": "Def. Nuclear",
+              "detail": "Recebe dano em dobro de 18 tipos e só resiste a si mesmo"
+            },
+            {
+              "label": "Normal",
+              "detail": "É o único tipo que acerta Nuclear com dano super efetivo"
+            },
+            {
+              "label": "Sem imunidade",
+              "detail": "Nada em Uranium é imune a ataques Nucleares"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Guia de evolução de Pokemon Uranium",
+          "description": "Explique como os Pokémon evoluem em Uranium, incluindo evolução por nível, requisitos especiais e formas evolutivas. Ajude os jogadores a identificar as condições necessárias para completar a Pokédex e formar equipes mais fortes.",
+          "href": "/mechanics/pokemon-uranium-evolution-levels",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Por nível",
+              "detail": "A maioria das espécies de Tandor evolui ao atingir um nível definido"
+            },
+            {
+              "label": "Por pedra",
+              "detail": "Evoluções por pedra que ignoram o requisito de nível comum"
+            },
+            {
+              "label": "Amizade",
+              "detail": "Evoluções por alta amizade recompensam treinadores pacientes"
+            },
+            {
+              "label": "Troca",
+              "detail": "Evoluções por troca e como acioná-las com segurança"
+            },
+            {
+              "label": "Formas Mega",
+              "detail": "Mega Pedras e Megaevolução em batalha"
+            },
+            {
+              "label": "Nuclear",
+              "detail": "Como as formas Nucleares corrompidas diferem da evolução normal"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Líderes de ginásio de Pokemon Uranium",
+          "description": "Apresente o desafio dos ginásios da região de Tandor, cobrindo os líderes, suas equipes de batalha, combinações de tipos importantes e a preparação recomendada. Organize os encontros na ordem da história para que os jogadores se preparem para cada insígnia.",
+          "href": "/guide/pokemon-uranium-gym-leaders",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Maria",
+              "detail": "Líder do tipo Normal em Nowtoch City e sua primeira insígnia"
+            },
+            {
+              "label": "8 insígnias",
+              "detail": "A Liga de Tandor exige as oito insígnias de ginásio"
+            },
+            {
+              "label": "Obediência",
+              "detail": "Cada insígnia eleva o nível máximo de obediência dos Pokémon trocados"
+            },
+            {
+              "label": "Prep. de tipos",
+              "detail": "Counters recomendados antes de cada batalha de ginásio"
+            },
+            {
+              "label": "Prep. de níveis",
+              "detail": "Níveis de equipe sugeridos para cada desafio de insígnia"
+            },
+            {
+              "label": "Fim de jogo",
+              "detail": "O que é desbloqueado ao conquistar as oito insígnias"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Melhores Pokémon de Pokemon Uranium (tier list)",
+          "description": "Classifique os Pokémon pela utilidade geral durante a história principal e o pós-jogo, considerando stats, habilidades, tipos, potencial de evolução e sinergia de equipe. Distinga claramente as recomendações para a campanha dos rankings competitivos e explique o raciocínio de cada posição.",
+          "href": "/characters/pokemon-uranium-best-pokemon",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "O melhor para a história e o pós-jogo, com stats, tipos e sinergia de alto nível"
+            },
+            {
+              "label": "A",
+              "detail": "Picks confiáveis que carregam a equipe com apoio mínimo"
+            },
+            {
+              "label": "B",
+              "detail": "Opções sólidas com forças claras e algumas lacunas a cobrir"
+            },
+            {
+              "label": "C",
+              "detail": "Ajudas de início que perdem valor quando opções melhores aparecem"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Guia de download e atualização de Pokemon Uranium",
+          "description": "Explique a plataforma compatível do jogo, o básico da instalação, a verificação de versão e as considerações sobre patches. Direcione os jogadores aos canais oficiais do projeto para informações de download e solução de problemas, distinguindo claramente o jogo compatível no Windows dos métodos não oficiais em Mac, Linux ou celular.",
+          "href": "/community/pokemon-uranium-update",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Confirme que você está na versão compatível para PC com Windows"
+            },
+            {
+              "label": "2",
+              "detail": "Instale o jogo a partir da versão mantida pela comunidade"
+            },
+            {
+              "label": "3",
+              "detail": "Confira sua versão com as últimas notas de patch"
+            },
+            {
+              "label": "4",
+              "detail": "Faça backup do seu save antes de aplicar qualquer atualização"
+            },
+            {
+              "label": "5",
+              "detail": "Acompanhe o fórum da comunidade e o Discord para novos patches"
+            },
+            {
+              "label": "6",
+              "detail": "Trate os métodos para Mac, Linux e celular como não oficiais"
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "description": "Respostas rápidas para as perguntas mais comuns sobre Pokemon Uranium.",
+      "items": [
+        {
+          "question": "O que é Pokemon Uranium?",
+          "answer": "Pokemon Uranium é um RPG gratuito de captura de monstros feito por fãs e ambientado na região original de Tandor. Foi lançado em agosto de 2016 após cerca de nove anos de desenvolvimento voluntário e traz mais de 150 Pokémon originais, oito ginásios e o primeiro tipo Nuclear da série."
+        },
+        {
+          "question": "Pokemon Uranium é grátis?",
+          "answer": "Sim. Pokemon Uranium é um projeto de fãs gratuito para PC com Windows. Não é um lançamento oficial da Nintendo, da Game Freak nem da The Pokémon Company, e esta wiki é um site de guias independente feito por jogadores."
+        },
+        {
+          "question": "Qual inicial de Pokemon Uranium devo escolher?",
+          "answer": "Pokemon Uranium oferece três iniciais de tipo duplo: Orchynx, Raptorch e Eletux. Orchynx é o tanque resistente de Planta / Aço, Raptorch é o veloz sweeper de Fogo / Terra e Eletux é o atacante especial equilibrado de Água / Elétrico, então escolha o papel que sua equipe mais precisa."
+        },
+        {
+          "question": "Quantos ginásios tem Pokemon Uranium?",
+          "answer": "Pokemon Uranium tem oito ginásios na Liga de Tandor. Você precisa das oito insígnias para entrar no Campeonato de Tandor, e cada insígnia também eleva o nível em que Pokémon trocados vão te obedecer."
+        },
+        {
+          "question": "O que é o tipo Nuclear em Pokemon Uranium?",
+          "answer": "Nuclear é o tipo símbolo de Pokemon Uranium. É super efetivo contra 17 dos 19 tipos do jogo, mas também é o tipo defensivo mais fraco: recebe dano em dobro de 18 tipos e só resiste a si mesmo."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Pronto para dominar Pokemon Uranium?",
+      "description": "Dos seus primeiros passos na região de Tandor às batalhas de ginásio, aos encontros do tipo Nuclear e ao conteúdo de pós-jogo, nossa wiki da comunidade cobre tudo com guias gratuitos e atualizados.",
+      "primary": "Ler o guia para iniciantes",
+      "secondary": "Jogar no PC"
+    }
+  },
+  "shared": {
+    "wikiNavigation": "Navegação da wiki",
+    "activeCodes": "Códigos ativos",
+    "updated": "Atualizado",
+    "viewAllCodes": "Ver todos os códigos",
+    "playOnRoblox": "Jogar no PC",
+    "inThisSection": "Nesta seção",
+    "tableOfContents": "Índice",
+    "nextSteps": "Próximos passos",
+    "needHelp": "Precisa de ajuda?",
+    "relatedReading": "Leituras relacionadas",
+    "relatedGuides": "Guias relacionados",
+    "readMore": "Ler mais",
+    "officialMedia": "Mídia oficial",
+    "home": "Início",
+    "noGuidesAvailable": "Ainda não há guias disponíveis. Volte em breve!"
+  },
+  "footer": {
+    "aboutTitle": "Pokemon Uranium Wiki",
+    "about": "Pokemon Uranium Wiki é um hub de guias independente feito por fãs que cobre a região de Tandor, entradas da Pokédex, Pokémon do tipo Nuclear, batalhas de ginásio, evoluções e conhecimentos essenciais do jogo para jogadores novos e veteranos.",
+    "quickLinks": "Links rápidos",
+    "guides": "Guias",
+    "legal": "Legal",
+    "copyright": "2026 Pokemon Uranium Wiki. Não é afiliada à Nintendo, The Pokémon Company nem à Game Freak.",
+    "description": "RPG de Pokémon feito por fãs para PC com mais de 150 Pokémon originais, a região de Tandor e o tipo Nuclear.",
+    "playGame": "Jogar no PC",
+    "officialDiscord": "Discord oficial",
+    "officialYoutube": "YouTube oficial",
+    "vvBuilder": "Fórum da comunidade",
+    "beginnerGuide": "Guia para iniciantes",
+    "raceGuides": "Guias de personagens",
+    "bossGuides": "Guias de progresso",
+    "buildGuide": "Guias de mecânicas",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfService": "Termos de Serviço"
+  }
+}

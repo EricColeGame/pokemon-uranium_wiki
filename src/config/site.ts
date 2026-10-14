@@ -32,6 +32,6 @@ export const siteConfig: SiteConfig = {
     youtube: "https://www.youtube.com/results?search_query=Pokemon+Uranium+official+trailer",
     forum: "https://pokemonuranium.co/forum/",
   },
-  locales: ["en", "es", "pt", "de", "fr"],
+  locales: ["en", "es", "pt", "fr"],
   defaultLocale: "en",
 };
