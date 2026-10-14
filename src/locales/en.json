@@ -43,22 +43,22 @@
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Learn how Pokemon Uranium begins in Moki Town: collect your starter from Professor Bamb'o, learn the battle basics, and follow the early Tandor route without missing a step."
         },
         {
           "number": "2",
-          "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "title": "Best Starter Pokemon",
+          "description": "Compare Orchynx, Raptorch, and Eletux before you commit. Every Tandor starter is dual-typed and evolves once, so this choice shapes your whole team."
         },
         {
           "number": "3",
-          "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "title": "Fastest Leveling",
+          "description": "Catch up to Tandor's aggressive level curve with the best EXP farming spots, trainer rematches, and grinding routes before each gym."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in Pokemon Uranium."
+          "title": "How to Evolve",
+          "description": "Understand level-based evolution, stone and friendship methods, and trade evolutions so nothing on your team stays unevolved longer than it should."
         }
       ]
     },
@@ -66,237 +66,355 @@
       "eyebrow": "Popular Pages",
       "title": "Trending Now",
       "quickLinks": [
-        "Hollow Progression",
-        "Fastest Leveling",
-        "Spirit Charms",
-        "All Boss Guides"
+        "Beginner Guide",
+        "Pokedex",
+        "Starters",
+        "Gym Leaders"
       ],
       "cards": [
         {
           "badge": "Beginner",
           "title": "Beginner Guide",
-          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
-          "href": "/beginner-guide"
+          "description": "Your first steps in Moki Town, the early routes, and the battle basics every new trainer needs.",
+          "href": "/guide/pokemon-uranium-walkthrough"
+        },
+        {
+          "badge": "Popular",
+          "title": "Pokedex & Fakemon",
+          "description": "Every Tandor species with dex numbers, typing, base stats, and evolution families.",
+          "href": "/guide/pokemon-uranium-pokedex"
+        },
+        {
+          "badge": "Popular",
+          "title": "Best Starter",
+          "description": "Orchynx, Raptorch, or Eletux: compare all three starters and their final forms.",
+          "href": "/guide/pokemon-uranium-starters"
+        },
+        {
+          "badge": "Guide",
+          "title": "Type Chart",
+          "description": "Full Uranium matchup chart including the Nuclear type's strengths and weaknesses.",
+          "href": "/mechanics/pokemon-uranium-type-chart"
+        },
+        {
+          "badge": "Guide",
+          "title": "Gym Leaders",
+          "description": "All eight Tandor badges, gym leader teams, and recommended counters in order.",
+          "href": "/guide/pokemon-uranium-gym-leaders"
         },
         {
           "badge": "Updated",
-          "title": "Active Codes",
-          "description": "All working codes with rewards redeem before they expire.",
-          "href": "/codes"
+          "title": "Best Pokemon Tier List",
+          "description": "The strongest story and post-game picks ranked from S tier down to C tier.",
+          "href": "/characters/pokemon-uranium-best-pokemon"
+        },
+        {
+          "badge": "Popular",
+          "title": "Nuclear Pokemon",
+          "description": "How the Nuclear type works, its corrupted forms, best moves, and how to cure them.",
+          "href": "/characters/pokemon-uranium-nuclear-pokemon"
+        },
+        {
+          "badge": "New",
+          "title": "EXP Farming",
+          "description": "The best grinding spots and level benchmarks before every major Tandor gym.",
+          "href": "/progression/pokemon-uranium-exp-farming"
         },
         {
           "badge": "Updated",
-          "title": "Equipment Database",
-          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
-          "href": "/equipment"
-        },
-        {
-          "badge": "Popular",
-          "title": "Which Race Should You Pick?",
-          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
-          "href": "/races/best-race"
-        },
-        {
-          "badge": "New",
-          "title": "Enemies & Monsters",
-          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
-          "href": "/enemies"
-        },
-        {
-          "badge": "Popular",
-          "title": "Boss Locations & Drops",
-          "description": "Every boss location, drop table, and respawn timer in one reference.",
-          "href": "/boss-locations-drops-respawn-times"
-        },
-        {
-          "badge": "Popular",
-          "title": "Best Builds",
-          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
-          "href": "/builds/best-builds"
-        },
-        {
-          "badge": "New",
-          "title": "Shikai Tier List",
-          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
-          "href": "/tier-list/shikai"
-        },
-        {
-          "badge": "New",
-          "title": "World Events Guide",
-          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
-          "href": "/world-events"
+          "title": "Update Guide",
+          "description": "Patch notes, version history, and how the community keeps Tandor alive in 2026.",
+          "href": "/community/pokemon-uranium-update"
         }
       ]
     },
     "aboutGame": {
       "title": "What is Pokemon Uranium?",
       "paragraphs": [
-        "Pokemon Uranium is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "Pokemon Uranium is a free fan-made monster-catching RPG set in the original Tandor region. Built over roughly nine years by a volunteer team and released in August 2016, it ships with more than 150 original Pokemon, a full eight-gym challenge, and its own signature Nuclear type that no official game has ever used.",
+        "You travel Tandor collecting gym badges, catching and evolving a custom Pokedex of Fakemon, and building a team around type matchups the mainline games never taught you. Our wiki covers the walkthrough, starters, evolution levels, gym leaders, tier list, and post-game so you can plan every step of the run."
       ],
       "stats": [
         {
           "label": "Developer",
-          "value": "Midnight Continent"
+          "value": "Volunteer Fan Team"
         },
         {
           "label": "Platform",
-          "value": "Roblox"
+          "value": "PC (Windows)"
         },
         {
           "label": "Genre",
-          "value": "Fighting RPG"
+          "value": "Fan-Made Monster RPG"
         },
         {
-          "label": "Visits",
-          "value": "12.6M+"
+          "label": "Region",
+          "value": "Tandor"
         },
         {
-          "label": "Favorites",
-          "value": "243K+"
+          "label": "Original Pokemon",
+          "value": "150+"
         },
         {
-          "label": "Total Skills",
-          "value": "130+"
+          "label": "Gyms",
+          "value": "8"
         },
         {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Release Year",
+          "value": "2016"
         }
       ],
       "cta": "Explore All Guides"
     },
     "explore": {
       "title": "Explore Pokemon Uranium Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "description": "Dive into Pokemon Uranium with walkthroughs for every Tandor gym, a full Pokedex and Fakemon catalog, starter comparisons, evolution levels, type matchups, and post-game content.",
       "modules": [
         {
           "order": 1,
-          "name": "Pokemon Uranium Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes/pokemon-uranium-codes",
-          "displayType": "code-box",
+          "name": "Pokemon Uranium Beginner Guide",
+          "description": "Help new players start their adventure in the Tandor region, choose a starter Pokemon, understand the basic battle system, and progress through the Gym Challenge. Includes early-game tips, essential mechanics, and common beginner mistakes.",
+          "href": "/guide/pokemon-uranium-walkthrough",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "1",
+              "detail": "Collect your starter from Professor Bamb'o in Moki Town"
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "2",
+              "detail": "Catch early Tandor Pokemon and learn the battle basics"
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "3",
+              "detail": "Beat Maria's Normal-type gym in Nowtoch City for your first badge"
+            },
+            {
+              "label": "4",
+              "detail": "Follow the route order so you never miss an HM or one-time item"
+            },
+            {
+              "label": "5",
+              "detail": "Save before major battles and keep a balanced, well-leveled team"
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
-          "href": "/guide/pokemon-uranium-beginner-guide",
-          "displayType": "feature-cards",
+          "name": "Pokemon Uranium Pokedex",
+          "description": "Explore the Pokemon available in Uranium, including original Fakemon, Nuclear-type Pokemon, evolution methods, abilities, and base stats. Provide searchable entries to help players identify Pokemon and plan their teams.",
+          "href": "/guide/pokemon-uranium-pokedex",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "Dex Order",
+              "detail": "How Tandor regional dex numbers are organized"
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "Types",
+              "detail": "Typing for every Tandor species, including Nuclear"
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "Stats",
+              "detail": "Base stats to compare before committing a team slot"
+            },
+            {
+              "label": "Evolutions",
+              "detail": "Evolution families and the level each species evolves"
+            },
+            {
+              "label": "Fakemon",
+              "detail": "Original fan-designed creatures unique to Uranium"
+            },
+            {
+              "label": "Filters",
+              "detail": "How to filter the dex to find a Pokemon fast"
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/seafood/pokemon-uranium-tier-list",
-          "displayType": "tier-grid",
+          "name": "Pokemon Uranium Starter Pokemon",
+          "description": "Compare the available starter Pokemon, their evolutionary lines, strengths, weaknesses, and potential roles throughout the story. Help players understand their starting options and choose a partner that suits their preferred playstyle.",
+          "href": "/guide/pokemon-uranium-starters",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "Orchynx",
+              "detail": "Grass / Steel starter that evolves into Metalynx"
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "Raptorch",
+              "detail": "Fire / Ground starter that becomes the fast sweeper Archilles"
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
+              "label": "Eletux",
+              "detail": "Water / Electric starter that grows into the tank Electruxo"
             },
             {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "Dual Types",
+              "detail": "Every Tandor starter carries two types from the start"
+            },
+            {
+              "label": "Mega Forms",
+              "detail": "All three starters gain Mega Evolutions later in the run"
+            },
+            {
+              "label": "Best Pick",
+              "detail": "How to choose based on your preferred playstyle"
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/upgrades/pokemon-uranium-best-upgrades",
-          "displayType": "feature-cards",
+          "name": "Pokemon Uranium Type Chart",
+          "description": "Provide a battle reference for Pokemon types, including the distinctive Nuclear type and its interactions with other types. Display offensive effectiveness and defensive weaknesses in an easy-to-scan format for team building and battle preparation.",
+          "href": "/mechanics/pokemon-uranium-type-chart",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "Nuclear",
+              "detail": "Super effective against 17 of the 19 types in the game"
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "Steel",
+              "detail": "The only type that resists Nuclear and hits it back super effectively"
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "Nuclear Def",
+              "detail": "Takes double damage from 18 types and resists only itself"
+            },
+            {
+              "label": "Normal",
+              "detail": "Uniquely hits Nuclear for super effective damage"
+            },
+            {
+              "label": "No Immunity",
+              "detail": "Nothing in Uranium is immune to Nuclear attacks"
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide/pokemon-uranium-how-to-get-cash-fast",
-          "displayType": "feature-cards",
+          "name": "Pokemon Uranium Evolution Guide",
+          "description": "Explain how Pokemon evolve in Uranium, including level-based evolution, special evolution requirements, and evolutionary forms. Help players identify the conditions needed to complete their Pokedex and develop stronger teams.",
+          "href": "/mechanics/pokemon-uranium-evolution-levels",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "By Level",
+              "detail": "Most Tandor species evolve once they reach a set level"
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "By Stone",
+              "detail": "Stone evolutions that skip the usual level requirement"
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "Friendship",
+              "detail": "High-friendship evolutions reward patient trainers"
+            },
+            {
+              "label": "Trading",
+              "detail": "Trade evolutions and how to trigger them safely"
+            },
+            {
+              "label": "Mega Forms",
+              "detail": "Mega Stones and in-battle Mega Evolution"
+            },
+            {
+              "label": "Nuclear",
+              "detail": "How corrupted Nuclear forms differ from normal evolution"
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
-          "href": "/upgrades/pokemon-uranium-how-to-upgrade-plot",
-          "displayType": "feature-cards",
+          "name": "Pokemon Uranium Gym Leaders",
+          "description": "Introduce the Gym Challenge across the Tandor region, covering Gym Leaders, their battle teams, important type matchups, and recommended preparation. Organize encounters in story order so players can prepare for each badge challenge.",
+          "href": "/guide/pokemon-uranium-gym-leaders",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "Maria",
+              "detail": "Normal-type leader in Nowtoch City and your first badge"
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "8 Badges",
+              "detail": "The Tandor League requires all eight gym badges"
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "Obedience",
+              "detail": "Each badge raises the traded-Pokemon obedience cap"
+            },
+            {
+              "label": "Type Prep",
+              "detail": "Recommended counters before each gym battle"
+            },
+            {
+              "label": "Level Prep",
+              "detail": "Suggested team levels for every badge challenge"
+            },
+            {
+              "label": "Endgame",
+              "detail": "What unlocks once you hold all eight badges"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Pokemon Uranium Best Pokemon Tier List",
+          "description": "Rank Pokemon by their overall usefulness during the main story and postgame, considering stats, abilities, typing, evolution potential, and team synergy. Clearly distinguish story-playthrough recommendations from competitive rankings and explain the reasoning behind each placement.",
+          "href": "/characters/pokemon-uranium-best-pokemon",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Best in slot for story and post-game with top-tier stats, typing, and synergy"
+            },
+            {
+              "label": "A",
+              "detail": "Reliable picks that carry a team with minimal support"
+            },
+            {
+              "label": "B",
+              "detail": "Solid options with clear strengths and a few gaps to cover"
+            },
+            {
+              "label": "C",
+              "detail": "Early-game helpers that fall off once better options appear"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Pokemon Uranium Download and Update Guide",
+          "description": "Explain the game's supported platform, installation basics, version checks, and patching considerations. Direct players to established project channels for current download information and troubleshooting, while clearly distinguishing supported Windows play from unofficial Mac, Linux, or mobile methods.",
+          "href": "/community/pokemon-uranium-update",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Confirm you are on the supported Windows PC version"
+            },
+            {
+              "label": "2",
+              "detail": "Install the game from the community-maintained release"
+            },
+            {
+              "label": "3",
+              "detail": "Check your version against the latest patch notes"
+            },
+            {
+              "label": "4",
+              "detail": "Back up your save file before applying any update"
+            },
+            {
+              "label": "5",
+              "detail": "Follow the community forum and Discord for new patches"
+            },
+            {
+              "label": "6",
+              "detail": "Treat Mac, Linux, and mobile methods as unofficial"
             }
           ]
         }
@@ -308,23 +426,23 @@
       "items": [
         {
           "question": "What is Pokemon Uranium?",
-          "answer": "Pokemon Uranium is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "answer": "Pokemon Uranium is a free fan-made monster-catching RPG set in the original Tandor region. It launched in August 2016 after roughly nine years of volunteer development and features more than 150 original Pokemon, eight gyms, and the series-first Nuclear type."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "Is Pokemon Uranium free to play?",
+          "answer": "Yes. Pokemon Uranium is a free fan project for Windows PC. It is not an official Nintendo, Game Freak, or The Pokemon Company release, and this wiki is an independent guide site built by players."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "Which Pokemon Uranium starter should I pick?",
+          "answer": "Pokemon Uranium gives you three dual-typed starters: Orchynx, Raptorch, and Eletux. Orchynx is the bulky Grass / Steel tank, Raptorch is the fast Fire / Ground sweeper, and Eletux is the balanced Water / Electric special attacker, so pick the role your team needs most."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "How many gyms are in Pokemon Uranium?",
+          "answer": "Pokemon Uranium has eight gyms in the Tandor League. You need all eight badges to enter the Tandor Championship, and each badge also raises the level at which traded Pokemon will obey you."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "What is the Nuclear type in Pokemon Uranium?",
+          "answer": "Nuclear is Pokemon Uranium's signature type. It is super effective against 17 of the 19 types in the game, but it is also the weakest defensive type, taking double damage from 18 types and resisting only itself."
         }
       ]
     },
