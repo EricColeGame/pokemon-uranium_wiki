@@ -1,0 +1,119 @@
+export const metadata = {
+  title: "Pokemon Uranium Android: Complete Controls Guide for Touch and Gamepad Play",
+  description: "Learn how Pokemon Uranium Android setups work, from JoiPlay touch controls to gamepad mapping, button layouts, and fixes for common input problems.",
+  category: "controls",
+  date: "2026-10-14",
+}
+
+## Why Controls Make or Break Pokemon Uranium on Android
+
+Running Pokemon Uranium Android setups is less about raw horsepower than about one thing: input. Uranium was built for a keyboard, so any Pokemon Uranium Android configuration — a JoiPlay-style runtime, a Windows emulation layer, or streaming from a PC — lives or dies on how well you translate those keys to a touchscreen or a controller. It matters because the game is genuinely big: 8 gyms, 13 towns, 7 optional sidequests, and more than 190 catchable species, according to the community wiki. A clumsy layout turns all of that into friction.
+
+If you have never set it up before, here is the short version. Uranium is a fan-made RPG Maker project with Pokémon Essentials at its core, released for Windows and never ported. It expects arrow keys to walk, a confirm key to interact, and a cancel key to open menus. On a phone, those expectations become your problem to solve. Your control layer — not the game itself — decides whether a gym battle feels tense or tedious.
+
+### No Official Android Port — What That Means for You
+
+There is no official Pokemon Uranium Android release, and nothing suggests one is coming. The community-maintained home for the game is the [Pokémon Uranium Wiki download page](https://pokemon-uranium.fandom.com/wiki/Download), where you can grab the current build, read patch notes, and confirm you are on the latest version using the in-game "Check for Updates" option. Everything Android-related comes from player-made tools and workarounds, which is why community reports vary so much from device to device. Treat any setup guide, including this one, as a starting point rather than a promise.
+
+## How People Actually Play Pokemon Uranium on Android
+
+There are four realistic routes, and each one produces a very different control feel. The right pick depends on your phone's chipset, how much patience you have for setup, and whether you already own a controller.
+
+| Method | How it works | Setup difficulty | Control feel | Best for |
+|---|---|---|---|---|
+| JoiPlay-style RPG Maker runtime | Runs the game's files natively on Android with a plugin layer | Moderate | Good once mapped; touch-first | Most players |
+| Windows emulation (Wine-based apps) | Runs the actual Windows build inside a compatibility container | High | Excellent with a controller | Flagship phones, tinkerers |
+| Streaming from your own PC | Your PC runs the game; your phone is just a screen and input device | Moderate | Depends entirely on Wi-Fi quality | Players with a gaming rig |
+| Screen mirroring / remote desktop | Mirrors an existing PC session onto your phone | Low | Noticeably laggy for timed inputs | Checking a save, not battling |
+
+A quick decision rule: for most Pokemon Uranium Android players, the runtime route is the pragmatic choice if you want to play without touching a computer. If you own a controller and a flagship phone, Windows emulation delivers the most faithful version of the original game. Streaming is excellent on a stable 5 GHz network and miserable on a crowded one.
+
+## The Keyboard Bindings You're Translating
+
+Before you map a single button, know what you are mapping. The table below reflects the bindings that most Pokémon Essentials-based fan games use by default, and they line up with what players describe in community threads. Your build may differ slightly, so verify in game before you build an entire layout around it.
+
+| PC input | In-game action | Typical Android mapping |
+|---|---|---|
+| Arrow keys | Walk, navigate menus | D-pad zone, left thumb |
+| Z or Enter | Confirm, talk, interact | A button, right thumb |
+| X or Escape | Cancel, open menu | B button, right thumb |
+| Shift (hold) | Run | Toggle or shoulder button |
+| F1 | Options / settings | Small menu button, top edge |
+| F5 | Resize window | Skip — not useful on mobile |
+| F12 | Soft reset | Optional, double-tap gesture |
+
+One detail trips up almost everyone: the run function is usually a held key, not a toggle. Holding a virtual button while steering with your other thumb is genuinely uncomfortable, so most players rebind run to a toggle or move it to a shoulder button on a controller.
+
+## Touch Controls: Step-by-Step Setup for Pokemon Uranium Android
+
+Touch is the default approach for most people, and it works well once the layout is sane. The general workflow looks like this.
+
+1. Install an Android app that can run RPG Maker XP-era projects with a Pokémon Essentials plugin. JoiPlay plus its RPG Maker plugin is the common community choice.
+2. Copy your own legally obtained copy of the game folder onto your phone's internal storage — not a cloud folder that unmounts mid-session.
+3. Add the game inside the app and point it at the executable or game configuration file.
+4. Enable the on-screen keyboard overlay so virtual buttons appear on top of the game.
+5. Map each virtual button to the keyboard key listed in the table above.
+6. Test in the overworld first: walk in all four directions, open the menu, and talk to an NPC.
+7. Then test in a battle, where confirm and cancel get pressed constantly.
+8. Save your layout as a named profile so an app update does not wipe it.
+
+| Screen zone | Buttons | Why it works |
+|---|---|---|
+| Bottom-left | Four-way D-pad | Natural left-thumb movement arc |
+| Bottom-right | A (confirm) and B (cancel) | The two most-pressed inputs in the game |
+| Just above A/B | Run toggle | Reachable without moving your thumb far |
+| Top-right corner | Menu / save state | Deliberately out of the way during play |
+| Top-left corner | Fast-forward, if supported | Useful for grinding, rarely touched otherwise |
+
+### Tuning the On-Screen Overlay
+
+- Set opacity between roughly 40% and 60% so buttons stay visible without hiding dialogue boxes.
+- Size buttons to about 12–15% of your screen height; anything smaller causes missed presses in battle.
+- Leave a visible gap between the D-pad and the A/B cluster so a diagonal step never registers as a confirm.
+- Enable haptic feedback if your app supports it — a short vibration confirms input without you looking down.
+- Turn on any "slide input" or diagonal option so rolling your thumb can register two directions at once.
+- Nudge the whole overlay slightly higher than feels natural; phone grips shift during long sessions.
+
+## Gamepad Mapping and Control Troubleshooting
+
+A Bluetooth controller is the single biggest quality-of-life upgrade for Pokemon Uranium Android play. It removes thumb occlusion, gives you real tactile feedback, and makes held inputs like running feel natural instead of awkward.
+
+### Recommended Controller Layout
+
+| Controller input | In-game action | Notes |
+|---|---|---|
+| D-pad | Movement | Cleaner than the analog stick on grid-based maps |
+| A / Cross | Confirm, interact | Mirrors the keyboard's Z key |
+| B / Circle | Cancel, menu | Mirrors the keyboard's X key |
+| X / Square or L1 | Run | Shoulder buttons are easier to hold down |
+| Start / Plus | Pause, menu | Also handy for save states |
+| R2 / ZR | Fast-forward, if supported | Great for grinding routes |
+
+Pairing tips: connect the controller before launching the game so the input layer detects it immediately. Prefer a 2.4 GHz dongle or wired connection when your controller supports one, and avoid running Bluetooth audio at the same time — it competes for the same bandwidth and adds noticeable input lag.
+
+### Common Control Problems and Fixes
+
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| Character keeps walking after you release | Stuck key event or ghost touch | Re-map the button, restart the app, recalibrate |
+| Diagonals will not register | D-pad zone too small or 8-way disabled | Enlarge the zone, enable diagonal/slide input |
+| Run never activates | Held key mapped to a tap button | Switch run to a toggle or shoulder button |
+| Buttons feel delayed in battle | Frame drops from background apps | Close apps, lower render scale, enable performance mode |
+| Menu opens randomly | Palm or accidental touch | Move the menu button to a top corner with margin |
+| Controller pairs but does nothing | Wrong input mode (XInput vs. DirectInput) | Switch modes in the app and re-map |
+
+If a fix does not stick, the culprit is usually the game's input polling rather than your layout. Lower the runtime resolution a notch — smoother frames often solve input problems that no amount of re-mapping ever will.
+
+## FAQ
+
+**Is there an official Pokemon Uranium Android version?**
+No. Uranium was released for Windows and never received an official mobile port. Every Pokemon Uranium Android setup you see online is a community workaround, so results vary by phone model and app version.
+
+**What is the best control method for playing on a phone?**
+A Bluetooth controller wins on comfort and precision. If you prefer touch, spend ten minutes building a proper overlay with a large D-pad and clearly separated confirm and cancel buttons — the effort pays off across dozens of hours of play.
+
+**Do I need a powerful phone to play?**
+Not necessarily. A runtime-style app that executes the game's files directly is far lighter than running the full Windows build inside an emulation container. Mid-range phones handle the lighter route fine, while the heavier route benefits from a flagship chip.
+
+**Why do my controls stop responding mid-battle?**
+Usually performance, not mapping. Battles render more sprites and effects than the overworld, so frame drops can swallow inputs. Close background apps, reduce the render scale, and test again before rebuilding your layout.

@@ -1,0 +1,119 @@
+export const metadata = {
+  title: "Pokémon Uranium Android : guide complet des contrôles pour le jeu tactile et à la manette",
+  description: "Découvrez comment fonctionnent les configurations de Pokémon Uranium Android, des contrôles tactiles JoiPlay au mappage de manette, en passant par les dispositions de boutons et les correctifs des problèmes d'entrée courants.",
+  category: "controls",
+  date: "2026-10-14",
+}
+
+## Pourquoi les contrôles font ou défont Pokémon Uranium sur Android
+
+Faire tourner des configurations de Pokémon Uranium Android dépend moins de la puissance brute que d'une seule chose : les entrées. Uranium a été conçu pour un clavier, donc toute configuration de Pokémon Uranium Android — un environnement d'exécution de type JoiPlay, une couche d'émulation Windows ou une diffusion depuis un PC — tient ou s'effondre selon la qualité avec laquelle vous traduisez ces touches vers un écran tactile ou une manette. Cela compte parce que le jeu est vraiment vaste : 8 arènes, 13 villes, 7 quêtes annexes optionnelles et plus de 190 espèces capturables, selon le wiki communautaire. Une disposition maladroite transforme tout cela en friction.
+
+Si vous ne l'avez jamais configuré auparavant, voici la version courte. Uranium est un projet RPG Maker créé par des fans, avec Pokémon Essentials comme cœur, sorti sur Windows et jamais porté. Il attend les touches fléchées pour marcher, une touche de confirmation pour interagir et une touche d'annulation pour ouvrir les menus. Sur un téléphone, ces attentes deviennent votre problème à résoudre. Votre couche de contrôle — et non le jeu lui-même — décide si un combat d'arène est palpitant ou fastidieux.
+
+### Pas de portage Android officiel — ce que cela implique pour vous
+
+Il n'existe aucune version officielle de Pokémon Uranium Android, et rien ne laisse présager qu'une telle version arrive. Le site communautaire de référence pour le jeu est la [page de téléchargement du wiki Pokémon Uranium](https://pokemon-uranium.fandom.com/wiki/Download), où vous pouvez récupérer la version actuelle, lire les notes de patch et confirmer que vous êtes sur la dernière version grâce à l'option « Vérifier les mises à jour » du jeu. Tout ce qui concerne Android provient d'outils et de contournements créés par les joueurs, ce qui explique pourquoi les retours de la communauté varient autant d'un appareil à l'autre. Considérez n'importe quel guide de configuration, y compris celui-ci, comme un point de départ plutôt qu'une promesse.
+
+## Comment les gens jouent réellement à Pokémon Uranium sur Android
+
+Il existe quatre approches réalistes, et chacune produit une sensation de contrôle très différente. Le bon choix dépend du chipset de votre téléphone, de votre patience pour la configuration et du fait que vous possédiez déjà une manette.
+
+| Méthode | Fonctionnement | Difficulté de configuration | Sensation de contrôle | Idéal pour |
+|---|---|---|---|---|
+| Environnement d'exécution RPG Maker de type JoiPlay | Exécute les fichiers du jeu nativement sur Android avec une couche de plugins | Modérée | Bon une fois mappé ; pensé pour le tactile | La plupart des joueurs |
+| Émulation Windows (applications basées sur Wine) | Exécute la véritable version Windows dans un conteneur de compatibilité | Élevée | Excellente avec une manette | Téléphones haut de gamme, bricoleurs |
+| Diffusion depuis votre propre PC | Votre PC exécute le jeu ; votre téléphone n'est qu'un écran et un périphérique d'entrée | Modérée | Dépend entièrement de la qualité du Wi-Fi | Joueurs disposant d'une configuration de jeu |
+| Miroir d'écran / bureau à distance | Reflète une session PC existante sur votre téléphone | Faible | Avec une latence notable pour les entrées chronométrées | Consulter une sauvegarde, pas combattre |
+
+Une règle de décision rapide : pour la plupart des joueurs de Pokémon Uranium Android, la solution d'environnement d'exécution est le choix pragmatique si vous voulez jouer sans toucher à un ordinateur. Si vous possédez une manette et un téléphone haut de gamme, l'émulation Windows offre la version la plus fidèle du jeu original. La diffusion est excellente sur un réseau 5 GHz stable et pénible sur un réseau encombré.
+
+## Les affectations clavier que vous traduisez
+
+Avant de mapper un seul bouton, sachez ce que vous mappez. Le tableau ci-dessous reflète les affectations que la plupart des jeux de fans basés sur Pokémon Essentials utilisent par défaut, et elles correspondent à ce que les joueurs décrivent dans les discussions communautaires. Votre version peut différer légèrement, alors vérifiez en jeu avant de construire toute une disposition autour de cela.
+
+| Entrée PC | Action en jeu | Mappage Android typique |
+|---|---|---|
+| Touches fléchées | Marcher, naviguer dans les menus | Zone de croix directionnelle, pouce gauche |
+| Z ou Entrée | Confirmer, parler, interagir | Bouton A, pouce droit |
+| X ou Échap | Annuler, ouvrir le menu | Bouton B, pouce droit |
+| Maj (maintenir) | Courir | Basculer ou bouton de tranche |
+| F1 | Options / paramètres | Petit bouton de menu, bord supérieur |
+| F5 | Redimensionner la fenêtre | Ignorer — inutile sur mobile |
+| F12 | Réinitialisation douce | Optionnel, geste de double tap |
+
+Un détail piège presque tout le monde : la fonction courir est généralement une touche maintenue, pas une bascule. Maintenir un bouton virtuel tout en dirigeant avec l'autre pouce est vraiment inconfortable, donc la plupart des joueurs réaffectent courir à une bascule ou le déplacent vers un bouton de tranche sur une manette.
+
+## Contrôles tactiles : configuration pas à pas pour Pokémon Uranium Android
+
+Le tactile est l'approche par défaut pour la plupart des gens, et cela fonctionne bien une fois que la disposition est sensée. Le flux de travail général ressemble à ceci.
+
+1. Installez une application Android capable d'exécuter des projets de l'époque RPG Maker XP avec un plugin Pokémon Essentials. JoiPlay accompagné de son plugin RPG Maker est le choix courant de la communauté.
+2. Copiez votre propre copie légalement obtenue du dossier de jeu sur le stockage interne de votre téléphone — pas dans un dossier cloud qui se démonte en pleine session.
+3. Ajoutez le jeu dans l'application et pointez-la vers l'exécutable ou le fichier de configuration du jeu.
+4. Activez la surcouche de clavier à l'écran afin que des boutons virtuels apparaissent par-dessus le jeu.
+5. Mappez chaque bouton virtuel à la touche de clavier indiquée dans le tableau ci-dessus.
+6. Testez d'abord dans le monde extérieur : marchez dans les quatre directions, ouvrez le menu et parlez à un PNJ.
+7. Testez ensuite en combat, où les boutons confirmer et annuler sont constamment pressés.
+8. Enregistrez votre disposition sous forme de profil nommé afin qu'une mise à jour de l'application ne l'efface pas.
+
+| Zone de l'écran | Boutons | Pourquoi cela fonctionne |
+|---|---|---|
+| En bas à gauche | Croix directionnelle à quatre directions | Arc de mouvement naturel pour le pouce gauche |
+| En bas à droite | A (confirmer) et B (annuler) | Les deux entrées les plus pressées du jeu |
+| Juste au-dessus de A/B | Bascule de course | Accessible sans trop déplacer le pouce |
+| Coin supérieur droit | Menu / sauvegarde d'état | Délibérément à l'écart pendant le jeu |
+| Coin supérieur gauche | Avance rapide, si pris en charge | Utile pour le farm, rarement touché autrement |
+
+### Régler la surcouche à l'écran
+
+- Réglez l'opacité entre environ 40 % et 60 % afin que les boutons restent visibles sans masquer les boîtes de dialogue.
+- Dimensionnez les boutons à environ 12–15 % de la hauteur de votre écran ; tout ce qui est plus petit provoque des pressions manquées en combat.
+- Laissez un espace visible entre la croix directionnelle et le groupe A/B afin qu'un pas en diagonale ne soit jamais enregistré comme une confirmation.
+- Activez le retour haptique si votre application le prend en charge — une courte vibration confirme l'entrée sans que vous ayez à baisser les yeux.
+- Activez toute option « entrée glissée » ou diagonale afin que rouler votre pouce puisse enregistrer deux directions à la fois.
+- Décalez toute la surcouche légèrement plus haut que ce qui semble naturel ; la prise du téléphone change pendant les longues sessions.
+
+## Mappage de manette et dépannage des contrôles
+
+Une manette Bluetooth est la plus grande amélioration de confort pour jouer à Pokémon Uranium Android. Elle élimine l'occlusion du pouce, vous offre un véritable retour tactile et rend les entrées maintenues comme la course naturelles plutôt qu'inconfortables.
+
+### Disposition de manette recommandée
+
+| Entrée manette | Action en jeu | Remarques |
+|---|---|---|
+| Croix directionnelle | Déplacement | Plus propre que le stick analogique sur les cartes en grille |
+| A / Croix | Confirmer, interagir | Reprend la touche Z du clavier |
+| B / Cercle | Annuler, menu | Reprend la touche X du clavier |
+| X / Carré ou L1 | Courir | Les boutons de tranche sont plus faciles à maintenir |
+| Start / Plus | Pause, menu | Pratique aussi pour les sauvegardes d'état |
+| R2 / ZR | Avance rapide, si pris en charge | Idéal pour farmer les routes |
+
+Conseils d'appairage : connectez la manette avant de lancer le jeu afin que la couche d'entrée la détecte immédiatement. Préférez un dongle 2,4 GHz ou une connexion filaire lorsque votre manette le permet, et évitez d'utiliser l'audio Bluetooth en même temps — cela entre en concurrence pour la même bande passante et ajoute une latence notable.
+
+### Problèmes de contrôle courants et correctifs
+
+| Symptôme | Cause probable | Correctif |
+|---|---|---|
+| Le personnage continue de marcher après avoir relâché | Événement de touche bloquée ou touche fantôme | Remappez le bouton, redémarrez l'application, recalibrez |
+| Les diagonales ne s'enregistrent pas | Zone de croix directionnelle trop petite ou 8 directions désactivées | Agrandissez la zone, activez l'entrée diagonale/glissée |
+| Courir ne s'active jamais | Touche maintenue mappée sur un bouton à tapoter | Passez courir à une bascule ou à un bouton de tranche |
+| Les boutons semblent retardés en combat | Baisses de frames dues aux applications en arrière-plan | Fermez les applications, réduisez l'échelle de rendu, activez le mode performance |
+| Le menu s'ouvre aléatoirement | Paume ou toucher accidentel | Déplacez le bouton menu dans un coin supérieur avec une marge |
+| La manette s'appaire mais ne fait rien | Mauvais mode d'entrée (XInput vs DirectInput) | Changez de mode dans l'application et remappez |
+
+Si un correctif ne tient pas, le coupable est généralement l'interrogation des entrées du jeu plutôt que votre disposition. Réduisez la résolution de l'environnement d'exécution d'un cran — des images plus fluides résolvent souvent des problèmes d'entrée qu'aucun remappage ne résoudra jamais.
+
+## FAQ
+
+**Existe-t-il une version officielle de Pokémon Uranium Android ?**
+Non. Uranium est sorti sur Windows et n'a jamais reçu de portage mobile officiel. Chaque configuration de Pokémon Uranium Android que vous voyez en ligne est un contournement communautaire, donc les résultats varient selon le modèle de téléphone et la version de l'application.
+
+**Quelle est la meilleure méthode de contrôle pour jouer sur téléphone ?**
+Une manette Bluetooth l'emporte sur le confort et la précision. Si vous préférez le tactile, passez dix minutes à construire une surcouche correcte avec une grande croix directionnelle et des boutons confirmer et annuler clairement séparés — l'effort est rentabilisé sur des dizaines d'heures de jeu.
+
+**Ai-je besoin d'un téléphone puissant pour jouer ?**
+Pas nécessairement. Une application de type environnement d'exécution qui exécute directement les fichiers du jeu est bien plus légère que l'exécution de la version Windows complète dans un conteneur d'émulation. Les téléphones de milieu de gamme gèrent très bien la solution la plus légère, tandis que la solution plus lourde profite d'une puce haut de gamme.
+
+**Pourquoi mes contrôles cessent-ils de répondre en plein combat ?**
+Généralement à cause des performances, pas du mappage. Les combats affichent plus de sprites et d'effets que le monde extérieur, donc les baisses de frames peuvent avaler les entrées. Fermez les applications en arrière-plan, réduisez l'échelle de rendu et testez à nouveau avant de reconstruire votre disposition.

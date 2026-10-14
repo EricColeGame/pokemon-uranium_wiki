@@ -1,0 +1,132 @@
+export const metadata = {
+  title: "Soporte de mando para Pokemon Uranium: guía completa de configuración, mapeo y soluciones",
+  description: "Aprende cómo funciona el soporte de mando para Pokemon Uranium, desde la configuración oficial de XInput hasta la reasignación de botones, la vibración y soluciones para problemas comunes con el gamepad.",
+  category: "controls",
+  date: "2026-10-14",
+}
+
+## Por qué importa el soporte de mando para Pokemon Uranium
+
+El soporte de mando para Pokemon Uranium solía ser una mezcla improvisada de hilos de foro, reasignadores de terceros y prueba y error. Hoy es una función integrada, y ese único cambio transforma cómo se siente este RPG hecho por fans en un monitor o televisor. Si alguna vez has avanzado a la fuerza por una ruta larga con un teclado, ya sabes por qué importa: el movimiento por casillas, la navegación constante por menús y los incontables encuentros salvajes son simplemente más cómodos con un mando en las manos.
+
+Pokemon Uranium es un RPG hecho por fans construido sobre RPG Maker XP y el framework Pokémon Essentials. Como la mayoría de los juegos hechos con ese conjunto de herramientas, se diseñó primero para teclado: teclas de flecha para caminar, una tecla de letra para confirmar y otra para cancelar. Ese diseño funciona, pero nunca se sintió del todo como los juegos portátiles de Pokémon que lo inspiraron. Un soporte de mando adecuado para Pokemon Uranium cierra esa brecha.
+
+La diferencia se nota más rápido en los momentos que repites cientos de veces por partida:
+
+| Tarea en el juego | Teclado | Mando | Por qué se siente mejor |
+|---|---|---|---|
+| Caminar por rutas largas | Teclas de flecha | Stick izquierdo o D-pad | Movimiento con el pulgar, sin fatiga en la muñeca |
+| Confirmar / interactuar | Z o Enter | Botón A | Coincide con la memoria muscular de las portátiles |
+| Cancelar / volver | X o Esc | Botón B | Misma disposición que el hardware de Nintendo |
+| Navegación del menú de batalla | Teclas de flecha + Z | D-pad + A | Flujo más rápido turno a turno |
+| Ordenar objetos equipados y equipo | Teclas de flecha + confirmar | Stick + A | Menos búsqueda de teclas |
+
+Para cualquiera que regrese a Uranium después de años, un mando también es la forma más rápida de reaprender los controles. Tus manos ya saben dónde están "confirmar" y "cancelar".
+
+## ¿Cuándo añadió Pokemon Uranium soporte oficial para mandos?
+
+Durante la mayor parte de la vida del juego, jugar con un mando significaba engañar al juego para que pensara que un mando era un teclado. Informes de la comunidad describen jugadores creando perfiles de Controller Companion para el proceso `Uranium.exe`, o usando utilidades de reasignación de teclado a mando para traducir la entrada del stick en teclas de flecha. Esas configuraciones funcionaban, pero había que rehacerlas cada vez que un jugador cambiaba de hardware, y rara vez manejaban bien el movimiento analógico o la vibración.
+
+Eso cambió con las notas del parche de 2023 del juego, que anunciaron soporte oficial para mandos. Según la documentación de parches de la Pokémon Uranium Wiki, los jugadores ahora pueden usar cualquier mando compatible con XInput, y se añadió vibración junto con ello. En la práctica, eso significa que el juego lee tu mando directamente en lugar de a través de una capa de traducción.
+
+| Época | Cómo usaban los jugadores un mando | Fiabilidad |
+|---|---|---|
+| Versiones antiguas | Reasignadores de teclado a mando, perfiles personalizados de Companion | Funcional pero frágil; se rehacía por configuración |
+| Desde el parche de 2023 | Soporte XInput integrado con vibración | Consistente, plug-and-play en mandos compatibles |
+| Configuraciones modernas | Soporte oficial más Steam Input para mandos que no son XInput | Mejor compatibilidad entre marcas |
+
+Si estás usando una descarga antigua, el primer paso de solución de problemas es simplemente actualizar a una versión publicada después de ese parche. Muchos informes de "mi mando no funciona" se remontan a versiones anteriores al parche.
+
+## ¿Qué mandos funcionan con Pokemon Uranium?
+
+La respuesta corta: cualquier mando que se reporte a Windows como dispositivo XInput. XInput es el estándar de mando de Microsoft, y es para lo que se escribió el soporte de mando integrado de Pokemon Uranium.
+
+| Mando | Cómo conectarlo | ¿Funciona de forma nativa? | Notas |
+|---|---|---|---|
+| Mando Xbox 360 | USB o receptor inalámbrico | Sí | El dispositivo XInput de referencia |
+| Xbox One / Series X\|S | USB-C, Bluetooth o adaptador | Sí | La mejor experiencia en general |
+| Mandos 8BitDo (modo XInput) | USB o Bluetooth | Sí | Cambia primero el mando al modo X |
+| Logitech F310 / F710 | USB | Sí, en modo X | Pon el interruptor trasero en X |
+| DualShock 4 / DualSense | USB o Bluetooth | No directamente | Envuelve con Steam Input o DS4Windows |
+| Mando Pro de Switch | Bluetooth | No directamente | Usa Steam Input o una herramienta envoltorio |
+
+El patrón es simple. Los mandos estilo Xbox y los mandos de terceros con modo XInput se reconocen de inmediato. Los mandos de Sony y Nintendo hablan un protocolo diferente, así que Windows necesita ayuda para presentarlos como XInput antes de que el juego pueda verlos.
+
+## Cómo configurar el soporte de mando para Pokemon Uranium
+
+La configuración toma unos dos minutos una vez que conoces el orden de las operaciones. El error más común es iniciar el juego antes de conectar el mando, lo que puede dejar al juego buscando entrada de un dispositivo que aún no existe.
+
+| Paso | Acción | Por qué importa |
+|---|---|---|
+| 1 | Conecta el mando y deja que Windows termine de configurar los controladores | El juego busca mandos al iniciarse |
+| 2 | Confirma que el mando se detecta en la configuración de controladores de juegos de Windows | Descarta problemas de cable y controladores desde el principio |
+| 3 | Inicia Pokemon Uranium | Los dispositivos de entrada se registran al arrancar |
+| 4 | Abre el menú de pausa y revisa la pantalla de Opciones | Aquí están los ajustes de vibración y entrada |
+| 5 | Prueba con una batalla y el menú de equipo | Verifica la entrada tanto en menús como en el campo |
+| 6 | Reinicia si nada responde | Obliga al juego a volver a buscar el mando |
+
+### Ruta A: mando XInput estilo Xbox
+
+Conéctalo, espera el sonido del controlador, inicia el juego y juega. Si el mando se reconoce en Windows, el juego debería detectarlo sin más. Esta es la ruta más fluida para tener un soporte de mando funcional en Pokemon Uranium.
+
+### Ruta B: mando de PlayStation o Switch
+
+Tienes dos opciones prácticas. Steam Input es la más fácil si tienes Steam instalado: añade el juego como acceso directo no Steam y luego activa el soporte de mando para esa entrada. DS4Windows es la alternativa; crea un mando Xbox virtual que el juego lee como XInput. En cualquier caso, cierra la otra herramienta antes de iniciar para evitar entrada doble.
+
+### Ruta C: mandos DirectInput más antiguos
+
+Si tu mando es anterior a XInput, un reasignador de teclado a mando sigue siendo la respuesta. Herramientas como reWASD te permiten crear una configuración personalizada que mapea el movimiento del stick y los botones a los comandos de teclado del juego, que es exactamente el caso de uso que describe su página de perfil de soporte de mando para Pokemon Uranium. Los perfiles de Companion creados por la comunidad en Steam Workshop adoptan un enfoque similar, y uno de ellos incluso mapea el auto-run al botón X dentro del menú de pausa.
+
+## Mapeo de botones, vibración y opciones de reasignación
+
+Aquí es donde los jugadores encuentran más fricción. Hilos de foros de la comunidad que se remontan años hacen la misma pregunta: ¿hay alguna forma de reasignar botones para la entrada de mando? La respuesta depende de tu versión y tu mando, pero la tabla siguiente cubre la distribución típica que reportan los jugadores.
+
+| Acción | Predeterminado de teclado | Botón típico de mando |
+|---|---|---|
+| Moverse | Teclas de flecha | Stick izquierdo / D-pad |
+| Confirmar, hablar, seleccionar | Z o Enter | A |
+| Cancelar, volver, cerrar menú | X o Esc | B |
+| Abrir menú de pausa | Esc o una tecla de menú | Start |
+| Correr | Shift (mantenida) | A menudo asignado a un botón superior o clic del stick |
+| Alternar vibración | — | Se encuentra en la pantalla de Opciones |
+
+Dos cosas vale la pena saber. Primero, si tu mando admite vibración, actívala en la pantalla de Opciones: la actualización de 2023 añadió vibración, pero se puede desactivar. Segundo, si tu versión del juego no muestra una pantalla de reasignación integrada, un reasignador se encarga: asigna las teclas que quieras a los botones que quieras, guarda el perfil e inicia el juego a través de la herramienta.
+
+| Herramienta de reasignación | Ideal para | Dificultad | Paso de vibración |
+|---|---|---|---|
+| Pantalla de Opciones integrada | Ajustes menores | Muy fácil | Sí |
+| Steam Input | DualSense, Switch Pro, distribuciones personalizadas | Moderada | Parcial |
+| DS4Windows | Mandos Sony en Windows | Moderada | Sí |
+| reWASD / perfiles de Companion | Mandos DirectInput, macros, alternar auto-run | Fácil a moderada | Varía |
+
+## Solución de problemas comunes de soporte de mando en Pokemon Uranium
+
+La mayoría de los problemas entran en unas pocas categorías. Revisa esta tabla antes de asumir que tu mando es incompatible.
+
+| Síntoma | Causa probable | Solución |
+|---|---|---|
+| El juego ignora el mando por completo | El mando no está en modo XInput | Cambia el interruptor de modo o usa DS4Windows |
+| Los botones están intercambiados o son extraños | Desajuste de distribución entre el mando y el juego | Reasigna en Opciones o mediante un reasignador |
+| Cada pulsación se registra dos veces | Dos capas de entrada activas a la vez | Desactiva Steam Input o cierra el reasignador |
+| El movimiento se desplaza solo | Desgaste del stick o zona muerta demasiado pequeña | Aumenta la zona muerta en tu reasignador |
+| No hay vibración | Vibración desactivada o mando no compatible | Actívala en Opciones; revisa las especificaciones del mando |
+| Funciona en menús, pero no en batalla | El foco se perdió en una ventana en segundo plano | Haz clic en la ventana del juego y vuelve a probar |
+
+Unos cuantos hábitos previenen la mayoría de estos problemas. Conecta el mando antes de iniciar, ejecuta solo una herramienta de entrada a la vez y mantén un único perfil guardado que puedas recargar después de una actualización de Windows. Si el juego sigue sin ver el mando, pruébalo en otro título para confirmar que el hardware está bien.
+
+## Preguntas frecuentes
+
+**¿Pokemon Uranium tiene soporte oficial para mandos?**
+Sí. Las notas del parche de 2023 del juego añadieron soporte integrado para cualquier mando compatible con XInput, junto con vibración. Antes de esa actualización, el soporte de mando para Pokemon Uranium dependía de herramientas de reasignación de terceros y perfiles creados por la comunidad.
+
+**¿Puedo usar un DualSense de PS5 o un mando Pro de Switch?**
+No directamente, porque ninguno de esos mandos habla XInput. Envuélvelos con Steam Input o DS4Windows para que Windows los presente como un mando estilo Xbox y luego inicia el juego. Los jugadores reportan que funciona bien una vez que solo hay una herramienta activa.
+
+**¿Cómo reasigno botones para el soporte de mando de Pokemon Uranium?**
+Revisa primero la pantalla de Opciones del juego: algunas versiones exponen allí los ajustes de entrada. Si la tuya no lo hace, usa un reasignador como Steam Input, DS4Windows o una utilidad de teclado a mando, y guarda la distribución como un perfil que puedas recargar.
+
+**¿Por qué no funciona la vibración de mi mando?**
+La vibración se añadió con la actualización de soporte oficial, así que confirma que tienes una versión actual y que la vibración está activada en la pantalla de Opciones. Los mandos más antiguos y algunos modelos de terceros no admiten vibración en absoluto, y los mandos DirectInput reasignados normalmente la pierden.
+
+**¿Es mejor un mando que un teclado para Uranium?**
+Para la mayoría de los jugadores, sí. El movimiento y los menús de batalla se asignan de forma natural a un D-pad y dos botones frontales, y las sesiones largas son más cómodas para las manos. El teclado sigue ganando para quien prefiera atajos de menú precisos o juegue en un portátil sin un puerto USB libre.

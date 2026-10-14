@@ -9,7 +9,42 @@
   "nav": {
     "home": "Home",
     "menu": "Menu",
-    "toggleTheme": "Toggle theme"
+    "toggleTheme": "Toggle theme",
+    "guide": "Guide",
+    "characters": "Characters",
+    "mechanics": "Mechanics",
+    "progression": "Progression",
+    "items": "Items",
+    "controls": "Controls",
+    "community": "Community"
+  },
+  "guide": {
+    "overviewTitle": "Pokemon Uranium Guide",
+    "overviewDescription": "Start here with beginner walkthroughs, the best starter, gym leader lineups, the full Pokedex, and post-game routes for Pokemon Uranium."
+  },
+  "characters": {
+    "overviewTitle": "Pokemon Uranium Characters",
+    "overviewDescription": "Meet the Tandor Pokedex: the best Pokemon, original Fakemon, legendaries, Mega Evolutions, and Nuclear-type creatures."
+  },
+  "mechanics": {
+    "overviewTitle": "Pokemon Uranium Mechanics",
+    "overviewDescription": "Understand how Pokemon Uranium works: evolution levels, trade evolutions, EV training, shiny odds, Mystery Gift, and the type chart."
+  },
+  "progression": {
+    "overviewTitle": "Pokemon Uranium Progression",
+    "overviewDescription": "Plan the long climb with level caps, EXP farming spots, Victory Road, the Elite Four, and side quests."
+  },
+  "items": {
+    "overviewTitle": "Pokemon Uranium Items",
+    "overviewDescription": "Find the key items that speed up a run: Lucky Egg, Heart Scale, Ability Capsule, and Mega Stones."
+  },
+  "controls": {
+    "overviewTitle": "Pokemon Uranium Controls",
+    "overviewDescription": "Set up how you play with controller support, speed-up tips, Android builds, and JoiPlay configuration."
+  },
+  "community": {
+    "overviewTitle": "Pokemon Uranium Community",
+    "overviewDescription": "Join the Pokemon Uranium community through the official Discord, the subreddit, game reviews, and update news."
   },
   "home": {
     "meta": {
@@ -453,7 +488,6 @@
       "secondary": "Play on PC"
     }
   },
-  "bosses": {},
   "shared": {
     "wikiNavigation": "Wiki Navigation",
     "activeCodes": "Active Codes",
@@ -484,9 +518,9 @@
     "officialYoutube": "Official YouTube",
     "vvBuilder": "Community Forum",
     "beginnerGuide": "Beginner Guide",
-    "raceGuides": "Race Guides",
-    "bossGuides": "Boss Guides",
-    "buildGuide": "Build Guide",
+    "raceGuides": "Character Guides",
+    "bossGuides": "Progression Guides",
+    "buildGuide": "Mechanics Guides",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   }

@@ -1,0 +1,139 @@
+export const metadata = {
+  title: "Guía del Regalo Misterioso de Pokemon Uranium: Cómo reclamar cada Pokémon de evento",
+  description: "Aprende cómo funciona el Regalo Misterioso de Pokemon Uranium: reclama Pokémon de evento desde el menú principal, recógelos en cualquier PokéMart y haz soft-reset para conseguir naturalezas.",
+  category: "mechanics",
+  date: "2026-10-14",
+}
+
+De vez en cuando, los desarrolladores de Pokemon Uranium dejan caer discretamente Pokémon y objetos gratis en las manos de cualquiera que sepa dónde buscar. El sistema de **Regalo Misterioso de Pokemon Uranium** es el mecanismo detrás de esos obsequios de aniversario y festividades, y usarlo no cuesta nada: no hay códigos, ni suscripción en línea, ni intercambios necesarios. Si nunca lo has abierto, estás dejando miembros de equipo gratis, objetos equipados y piedras de evolución sobre la mesa. Esta guía recorre la función del **Regalo Misterioso de Pokemon Uranium** de principio a fin: cómo desbloquearlo, dónde recoger tus recompensas y cómo hacer soft-reset para conseguir la naturaleza o habilidad que realmente quieres.
+
+## ¿Qué es la función Regalo Misterioso en Pokemon Uranium?
+
+Regalo Misterioso es una función de distribución integrada que entrega Pokémon de regalo especiales y objetos, normalmente para conmemorar una festividad, un aniversario del juego o un hito de la comunidad para el proyecto hecho por fans. Cada distribución se empaqueta como una Tarjeta Maravillosa: un pequeño vale digital que registra qué recibiste y cuándo. Reclamas la tarjeta desde la pantalla de título y luego recoges la criatura u objeto real de un NPC de tienda dentro de tu archivo guardado.
+
+Como los desarrolladores entregan estos regalos a través del propio cliente del juego en lugar de un servicio en línea de consola, no hay nada que registrar ni ningún código de canje que escribir. Simplemente actualizas el juego, abres el menú y reclamas.
+
+| Detalle de la función | Cómo funciona |
+| --- | --- |
+| Dónde lo reclamas | Menú principal → Regalo Misterioso |
+| Requisito de desbloqueo | Debes haber recibido tu Pokédex del profesor Bamb'o |
+| Dónde lo recoges | Cualquier PokéMart, del NPC de la izquierda con uniforme verde de cartero |
+| Coste | Gratis |
+| Contenido típico | Pokémon de evento, objetos equipados, objetos de evolución, Caramelos Raros |
+| Requisito de guardado | Debes entrar al juego y guardar después de reclamar |
+| ¿Se necesita cuenta en línea? | No |
+
+## Cómo reclamar un Regalo Misterioso de Pokemon Uranium
+
+El proceso es corto, pero tiene un paso que hace tropezar a casi todo el mundo: el guardado. Sigue la secuencia de abajo en orden y no tendrás que volver a reclamar nada.
+
+| Paso | Acción | Notas |
+| --- | --- | --- |
+| 1 | Avanza hasta que el profesor Bamb'o te dé la Pokédex | La opción del menú permanece oculta antes de este punto |
+| 2 | Sal al Menú principal (antes de cargar una partida guardada) | La opción Regalo Misterioso está en la pantalla de título |
+| 3 | Selecciona Regalo Misterioso y acepta la(s) Tarjeta(s) Maravillosa(s) | Puedes reclamar varias tarjetas a la vez |
+| 4 | Entra en tu partida guardada y guarda el juego | Este es el paso que la gente omite: no lo omitas |
+| 5 | Viaja a cualquier PokéMart | Todos los PokéMart usan el mismo NPC de reparto |
+| 6 | Habla con el NPC de la izquierda con uniforme verde de cartero | Él es el repartidor de todos los regalos |
+| 7 | Recoge tu Pokémon u objetos | Las estadísticas aleatorias se generan justo aquí |
+
+### Por qué el paso de guardado importa tanto
+
+Los desarrolladores incluyeron una regla específica para esta función: si quieres reclamar un regalo en varias partidas guardadas, o planeas hacer soft-reset para conseguir un Pokémon mejor, debes entrar al juego y guardar después de reclamar desde el Menú principal. Si cambias de partida guardada o cierras el programa sin hacerlo, el juego no registra el regalo como reclamado y tendrás que reclamarlo de nuevo. No es un error: así es como está escrito el indicador de distribución.
+
+### Si tu Pokémon de regalo se ve mal
+
+Los informes de la comunidad mencionan un problema cosmético recurrente: un Pokémon de regalo que llega sin su sprite especial. La solución estándar es ejecutar el parcheador. En el Menú principal, usa la opción Buscar actualizaciones para que el cliente descargue los archivos de datos más recientes y luego recoge el regalo otra vez. Mantener el juego parcheado también garantiza que estés viendo la distribución más reciente en lugar de una tarjeta caducada.
+
+## Soft-reset de tu regalo: qué es aleatorio y qué es fijo
+
+Esta es la parte que hace que el sistema de Regalo Misterioso de Pokemon Uranium sea realmente útil para jugadores con mentalidad competitiva. Los desarrolladores dividieron los datos en dos etapas: la tarjeta en sí queda fija en el momento en que la reclamas, pero los rasgos aleatorizados del Pokémon no se deciden hasta que realmente lo recibes del repartidor. Esa brecha es tu ventana para volver a tirar.
+
+| Se decide cuando reclamas en el Menú principal | Se decide cuando recoges en el PokéMart |
+| --- | --- |
+| Qué regalo recibes | Naturaleza |
+| La Tarjeta Maravillosa y su fecha registrada | Habilidad |
+| El objeto equipado y los movimientos fijos de la distribución | Variocolor |
+| El nivel, la ball y el número de ID fijos | Sexo (experiencia de jugador) |
+| — | Valores individuales (experiencia de jugador, no documentado oficialmente) |
+
+Una rutina práctica de soft-reset es así:
+
+- Reclama el regalo desde el Menú principal, luego entra en tu partida y guarda el juego.
+- Colócate justo delante del repartidor y guarda una segunda vez para que tu punto de control esté justo ahí.
+- Habla con él y revisa la pantalla de resumen. Si la naturaleza, la habilidad o el color no son los correctos, reinicia el juego y vuelve a hablar con él.
+- Repite hasta conseguir lo que quieres: nunca tienes que volver a descargar ni reclamar la tarjeta.
+
+Como la tirada ocurre al recogerlo, este método es rápido. La mayoría de los jugadores informa que un solo ciclo de reinicio tarda bastante menos de un minuto una vez que están delante del NPC.
+
+## Distribuciones actuales y pasadas del Regalo Misterioso de Pokemon Uranium
+
+Los desarrolladores han mantenido un ritmo constante de regalos de aniversario durante años, y la wiki de la comunidad registra tanto la tarjeta activa como la lista histórica. La distribución de aniversario documentada actualmente es Frynai, número de dex 118, entregado en una Gloria Ball.
+
+| Campo de la Tarjeta Maravillosa | Valor |
+| --- | --- |
+| Pokémon | Frynai (N.º de dex 118) |
+| Nivel | 5 |
+| Ball | Gloria Ball |
+| Objeto equipado | Bola de Hierro |
+| Habilidad | Potencia Bruta |
+| Naturaleza | Aleatoria |
+| N.º de ID | 31415 |
+| Cintas | Ninguna |
+| Rasgos especiales | Porta Pokérus; origen internacional |
+| Fecha de recepción | La fija el reloj de tu sistema cuando se reclama la Tarjeta Maravillosa |
+
+Una advertencia: la ventana de disponibilidad impresa en la página de la wiki se contradice a sí misma, ya que enumera tanto una fecha de finalización de 2026 como una de 2024 en la misma línea. Trátalo como un error de documentación y confirma la ventana activa en el juego antes de planear una sesión de soft-reset en torno a ella.
+
+La lista histórica es larga y sirve además como lista de verificación para coleccionistas que quieren saber qué se perdieron:
+
+| Año | Pokémon y objetos de regalo destacados |
+| --- | --- |
+| 2026 | Stenowatt y Frynai |
+| 2025 | Tonemy, Cubbug, Palo / Caramelos Raros / Barand, y Misdreavus |
+| 2024 | Chicoatl, Flager, Tubjaw / Ratsy, Lotad / Spritzee, y Gargryph |
+| 2023 | Chupacho, Grozard / Tancoon / Restos, Neopunk / Praseopunk, y Lavent |
+| 2022 | Corsola, Nupin, Comite, Selkid, Tikiki, y S51 |
+| 2021 | Sableye, Titanice, Hazma, y Volchik |
+| 2020 | Feleng, Paraudio, Gargryph, y Hagoop |
+| 2019 | Linkite / Tracton, Chimical, Owten / Jungore, y Glaslug |
+| 2018 | Devimp / Tancoon, Baashaun / Masking, Cassnail, Sheebit, Duplicat, y Luxi |
+| 2017 | Fafurr / Antarki, Lunapup, Nuclear Pahar, y Jackdeary |
+| 2016 | Puffluff, Cocaran / Minyan, Lazo Destino / Sachet / Hierba Aromática, y Jerbolta |
+| 2014–2015 | Fafurr, Chimical, S51, Modrille, Baashaun / Misdreavus, y Eevee |
+
+Fíjate en el patrón: algunos años entregan criaturas individuales, mientras que otros incluyen objetos como Restos, un Lazo Destino, un Sachet o una Hierba Aromática junto al Pokémon. Esos regalos de objetos importan para cualquiera que esté montando una configuración de evolución o crianza, así que vale la pena reclamar incluso un regalo que no planees usar.
+
+## Consejos, informes de la comunidad y solución de problemas
+
+Unos cuantos hábitos separan a los jugadores que coleccionan todos los regalos de los que los pierden:
+
+- Reclama en cada partida guardada que te importe. Cada archivo tiene su propio indicador de reclamo, pero cada uno necesita su propio guardado posterior al reclamo.
+- Reclama temprano dentro de la ventana. Las distribuciones rotan, y una tarjeta no reclamada puede volverse no disponible.
+- Busca actualizaciones antes de una sesión de soft-reset para que los datos de sprites y los indicadores de regalo estén actualizados.
+- Ten en cuenta el reloj de tu sistema: la fecha de recepción en la Tarjeta Maravillosa refleja la fecha de tu computadora.
+- Haz una copia de seguridad de tu partida guardada antes de sesiones largas de reinicio, por si acaso.
+
+| Problema | Causa probable y solución |
+| --- | --- |
+| Falta Regalo Misterioso en el Menú principal | Aún no has recibido la Pokédex |
+| El repartidor no tiene nada para ti | Reclamaste la tarjeta pero nunca guardaste; reclama de nuevo y luego guarda |
+| El regalo desapareció tras cambiar de partida | El reclamo no se registró; reclámalo otra vez y entra al juego |
+| El Pokémon no tiene sprite especial | Ejecuta el parcheador mediante Buscar actualizaciones en el Menú principal |
+| La fecha de la Tarjeta Maravillosa se ve mal | La fecha sigue el reloj de tu sistema, no el servidor |
+
+Para obtener la información más actualizada de descarga y actualización, consulta el [sitio web oficial de Pokemon Uranium](https://pokemon-uranium.com/) antes de solucionar problemas manualmente: un cliente desactualizado es la causa de la mayoría de los comportamientos extraños que reportan los jugadores.
+
+## Preguntas frecuentes
+
+**¿Cómo desbloqueo la opción Regalo Misterioso de Pokemon Uranium?**
+Necesitas llegar al punto de la historia en el que el profesor Bamb'o te da tu Pokédex. Hasta que eso ocurra, la entrada de Regalo Misterioso permanece oculta en el Menú principal, incluso si una distribución está activa.
+
+**¿Puede un Pokémon de Regalo Misterioso ser variocolor?**
+Sí. El variocolor, junto con la naturaleza y la habilidad, se genera en el momento en que recibes el Pokémon del repartidor del PokéMart. Guarda antes de hablar con él, luego reinicia y vuelve a intentarlo hasta obtener el resultado que quieres.
+
+**¿Puedo reclamar el mismo regalo en más de una partida guardada?**
+Puedes, pero debes entrar al juego y guardar en cada archivo después de reclamar desde el Menú principal. Omitir ese paso significa que el regalo no se registra y tendrás que reclamarlo otra vez.
+
+**¿Necesito conexión a internet o una cuenta para usar la función Regalo Misterioso de Pokemon Uranium?**
+No se requiere cuenta ni código. Los regalos se entregan a través del cliente del juego, así que ejecutar Buscar actualizaciones es lo que te mantiene alineado con la distribución que esté activa en ese momento. La experiencia de los jugadores sugiere que buscar actualizaciones es el paso de solución de problemas más fiable cuando un regalo parece estar roto.

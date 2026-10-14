@@ -1,0 +1,128 @@
+export const metadata = {
+  title: "Pokemon Uranium JoiPlay Controls: Play Uranium on Android the Right Way",
+  description: "Set up Pokemon Uranium in JoiPlay on Android, map every button, boost performance, and fix common control problems with this practical player guide.",
+  category: "controls",
+  date: "2026-10-14",
+}
+
+Pokemon Uranium is one of the most ambitious fan-made RPGs ever completed: a full-length adventure with eight gyms, thirteen towns, more than 190 catchable species, and modern conveniences like Wonder Trade, Mystery Gift, and Mega Evolution. It was built for Windows, though — which is exactly why so many players search for a Pokemon Uranium JoiPlay setup that lets them carry the whole Tandor region in their pocket.
+
+JoiPlay is an Android app that runs RPG Maker games, and with the right plugin and button mapping, Pokemon Uranium JoiPlay becomes a genuinely comfortable handheld experience instead of a cramped tap-fest. This guide covers installation, the full control map, performance tuning, and the input problems players report most often.
+
+## Why JoiPlay Is the Practical Way to Play Uranium on Android
+
+Uranium was developed with RPG Maker XP, the same engine family behind most Pokémon Essentials fan games. That matters, because JoiPlay's RPG Maker plugin was written specifically for those engines — so the game can launch without the emulation workarounds you would need for a Game Boy Advance or DS title.
+
+The trade-off is that nothing about the port is automatic. You are responsible for the files, the folder structure, and the button layout. Once that is done, though, the experience holds up surprisingly well.
+
+| Aspect | Playing on PC | Playing in JoiPlay on Android |
+| --- | --- | --- |
+| Installation | Standard Windows installer | Manual folder copy plus JoiPlay setup |
+| Input | Keyboard or USB gamepad | On-screen gamepad or Bluetooth controller |
+| Save files | Stored in your Saved Games folder | Stored inside the copied game folder |
+| Performance | Full speed on almost any PC | Depends on chipset, RAM, and thermal throttling |
+| Updates | Re-download or patch on desktop | Copy the new files over the old folder |
+| Portability | Desk-bound | Play anywhere, resume with the same save |
+
+On desktop, the game installs to a default program directory and keeps saves in a separate Saved Games path. On Android, everything lives inside the folder you copy across, which makes backups simple — just duplicate the folder.
+
+## What You Need Before You Install Pokemon Uranium JoiPlay
+
+Gather everything first. Half of the "it won't launch" complaints in community threads come down to a missing plugin or a game folder that was copied incompletely.
+
+| Requirement | Why It Matters | Notes |
+| --- | --- | --- |
+| JoiPlay app | The host that launches the game | Install before anything else |
+| RPG Maker plugin | Adds RPG Maker XP/VX support | Must match your JoiPlay version |
+| Uranium game files | The actual game folder | Keep the full folder, not just the executable |
+| Free storage | Game files plus save data | A few gigabytes of headroom is comfortable |
+| Android 8 or newer | Plugin compatibility | Newer versions generally behave better |
+| Bluetooth controller (optional) | More precise movement | Strongly recommended for long sessions |
+
+A note on sources: the community wiki hosts the current recommended download, and it is the safest place to grab the game files. You can find it on the [Pokemon Uranium community wiki download page](https://pokemon-uranium.fandom.com/wiki/Download), which also lists the standard PC install and save locations.
+
+Uranium's feature set is part of why the port is worth the effort: Randomizer and Nuzlocke modes, the Poké Radar for shiny hunting, the GTS, Virtual Trainer battles, multiple save files, and a Lobby for trading and battling with friends.
+
+## Step-by-Step: Installing Pokemon Uranium in JoiPlay
+
+The setup is short but order-dependent. Skipping a step usually means a black screen or an immediate crash.
+
+| Step | Action | Tip |
+| --- | --- | --- |
+| 1 | Install the JoiPlay app | Allow installs from your chosen source |
+| 2 | Install the RPG Maker plugin | Do this before opening any game |
+| 3 | Extract the Uranium folder | Avoid running directly from a compressed archive |
+| 4 | Move the folder to internal storage | SD cards can cause slow asset loading |
+| 5 | Open JoiPlay and tap "Add Game" | Point it at the folder, not a shortcut |
+| 6 | Select the game executable | This is the file the plugin launches |
+| 7 | Name the entry and set an icon | Makes multiple games easier to manage |
+| 8 | Launch once, then configure controls | Confirm it boots before customizing buttons |
+
+After the first successful launch, close the game and set up your controls. Doing it in that order prevents you from blaming the button layout for what is actually a file problem.
+
+## Pokemon Uranium JoiPlay Controls: The Complete Mapping Table
+
+Uranium uses the standard RPG Maker XP control scheme, which means a handful of keyboard keys drive everything. In JoiPlay, you assign those same keys to on-screen buttons or to a physical controller.
+
+| In-Game Action | Common Default Key | Bind It To |
+| --- | --- | --- |
+| Move | Arrow keys | D-pad or left stick |
+| Confirm, talk, interact | C or Enter | A button |
+| Cancel, back, close menu | X or Esc | B button |
+| Open pause menu | Enter or the cancel key on the overworld | Menu button |
+| Run | Hold Shift or the run key | Shoulder button (hold) |
+| Soft reset | F12 | Small corner button |
+| Screen size toggle | F5 | Small corner button |
+| RPG Maker settings window | F1 | Optional, rarely needed |
+
+Two practical notes from player experience. First, binding run to a shoulder button is far more comfortable than holding a face button while steering with the D-pad. Second, exact letter bindings can vary slightly between game builds and plugin versions, so confirm the keys in the game's own options or pause menu before you finalize your layout.
+
+For controller users, most Bluetooth gamepads map cleanly: D-pad for movement, A for confirm, B for cancel, and a shoulder button for running. Community reports suggest this setup feels closest to playing on a handheld console.
+
+## Touch Layout and Performance Tuning for Smooth Input
+
+Dropped inputs in JoiPlay are almost never a bug — they are a layout or performance problem. Fix the layout first, then chase frame rate.
+
+| Setting | Recommended Value | Why |
+| --- | --- | --- |
+| Button size | 110–130% | Easier to hit while walking diagonally |
+| Button opacity | 60–80% | Keeps dialogue boxes readable |
+| D-pad position | Lower left, slightly inset | Thumbs rest naturally in portrait or landscape |
+| A/B position | Lower right, A above B | Mirrors console muscle memory |
+| Diagonal input | Enable if available | Prevents "sticky" movement on tile edges |
+| Background apps | Close before playing | Frees RAM for battle animations |
+| Device resolution scaling | Lower if stuttering | The single biggest performance lever |
+
+A few more habits that help: keep the device out of direct sun during long sessions, since thermal throttling causes sudden frame drops that feel like input lag; save often with the in-game save function rather than relying on app switching; and keep the JoiPlay app and its plugin updated together.
+
+If battles with weather effects stutter while the overworld runs fine, that is a GPU load issue rather than a control issue — lower the rendering scale and it usually clears up.
+
+## Fixing the Most Common Pokemon Uranium JoiPlay Control Problems
+
+| Symptom | Likely Cause | Fix |
+| --- | --- | --- |
+| No buttons respond | Game launched without the plugin | Reinstall the RPG Maker plugin, relaunch |
+| Character moves but never interacts | Confirm key not bound | Assign C or Enter to a face button |
+| Menu opens by accident | Cancel key mapped to a commonly pressed button | Move it away from the D-pad side |
+| Inputs feel delayed | Frame rate drops, not lag | Lower resolution scaling, close background apps |
+| Game crashes on boot | Incomplete folder copy | Re-copy the entire game folder |
+| Saves disappear | Files stored outside the game folder | Keep everything inside the copied directory |
+| Buttons overlap dialogue | Layout too low or too large | Raise the D-pad and shrink buttons |
+
+The single most effective troubleshooting step is to test with the virtual keyboard enabled. If the game responds to keyboard input but not to your buttons, the problem is your mapping. If it ignores the keyboard too, the problem is the installation.
+
+## FAQ
+
+**Can I play Pokemon Uranium JoiPlay without a controller?**
+Yes. The on-screen gamepad is perfectly usable once you size and position the buttons properly. A Bluetooth controller is still more comfortable for long sessions, especially for grinding and shiny hunting.
+
+**Why does my character keep moving after I lift my thumb?**
+That is usually a diagonal input or button overlap problem. Enable diagonal handling if your plugin supports it, and make sure no invisible button sits under your D-pad.
+
+**Can I move my save between PC and Android?**
+Yes. Uranium stores saves inside the game directory, so copying the save files into the matching folder on the other device carries your progress across. Back up the folder before you do it.
+
+**Do I need to redo my Pokemon Uranium JoiPlay controls after updating the game?**
+Usually not, but a plugin update can reset mappings. Launch once after any update and check that confirm, cancel, and run still respond before starting a long play session.
+
+Get the layout right once and the rest of the game — all eight gyms, the sidequests, and the 190-plus species — plays exactly the way it should: one thumb on the D-pad, one on the confirm button, and no reason to go back to the desk.

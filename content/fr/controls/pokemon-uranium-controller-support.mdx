@@ -1,0 +1,132 @@
+export const metadata = {
+  title: "Prise en charge des manettes dans Pokemon Uranium : guide complet de configuration, de mappage et de correctifs",
+  description: "Découvrez comment fonctionne la prise en charge des manettes dans Pokemon Uranium, de la configuration XInput officielle au remappage des boutons, aux vibrations et aux solutions des problèmes courants de manette.",
+  category: "controls",
+  date: "2026-10-14",
+}
+
+## Pourquoi la prise en charge des manettes dans Pokemon Uranium est importante
+
+La prise en charge des manettes dans Pokemon Uranium n'était autrefois qu'un assemblage hétéroclite de fils de discussion sur les forums, d'outils de remappage tiers et de tâtonnements. Aujourd'hui, il s'agit d'une fonctionnalité intégrée, et ce seul changement transforme la sensation de ce RPG fait par des fans sur un moniteur ou une télévision. Si vous avez déjà enchaîné de longues routes au clavier, vous savez déjà pourquoi cela compte : les déplacements case par case, la navigation constante dans les menus et les rencontres sauvages sans fin sont tout simplement plus confortables avec une manette entre les mains.
+
+Pokemon Uranium est un RPG créé par des fans, développé sur RPG Maker XP et le framework Pokémon Essentials. Comme la plupart des jeux conçus avec cette boîte à outils, il a d'abord été pensé autour du clavier — les touches fléchées pour se déplacer, une touche de lettre pour confirmer, une autre pour annuler. Cette disposition fonctionne, mais elle n'a jamais vraiment reproduit la sensation des jeux Pokémon sur console portable qui l'ont inspiré. Une véritable prise en charge des manettes dans Pokemon Uranium comble cet écart.
+
+La différence se fait sentir le plus vite dans les moments que vous répétez des centaines de fois par partie :
+
+| Tâche en jeu | Clavier | Manette | Pourquoi c'est plus agréable |
+|---|---|---|---|
+| Parcourir de longues routes | Touches fléchées | Stick gauche ou croix directionnelle | Déplacement au pouce, pas de fatigue du poignet |
+| Confirmer / interagir | Z ou Entrée | Bouton A | Correspond à la mémoire musculaire des consoles portables |
+| Annuler / retour | X ou Échap | Bouton B | Même disposition que le matériel Nintendo |
+| Navigation dans les menus de combat | Touches fléchées + Z | Croix directionnelle + A | Enchaînement des tours plus rapide |
+| Tri des objets tenus et de l'équipe | Touches fléchées + confirmer | Stick + A | Moins de recherche de touches |
+
+Pour quiconque revient à Uranium après des années d'absence, une manette est aussi le moyen le plus rapide de réapprendre les commandes. Vos mains savent déjà où se trouvent « confirmer » et « annuler ».
+
+## Quand Pokemon Uranium a-t-il ajouté la prise en charge officielle des manettes ?
+
+Pendant la majeure partie de la vie du jeu, jouer à la manette signifiait faire croire au jeu qu'une manette était un clavier. Des retours de la communauté décrivent des joueurs créant des profils Controller Companion pour le processus `Uranium.exe`, ou utilisant des utilitaires de remappage clavier-vers-manette pour traduire les entrées du stick en touches fléchées. Ces configurations fonctionnaient, mais elles devaient être reconstruites à chaque changement de matériel, et elles géraient rarement bien le déplacement analogique ou les vibrations.
+
+Cela a changé avec les notes de patch 2023 du jeu, qui annonçaient la prise en charge officielle des manettes. Selon la documentation des patchs du Wiki Pokémon Uranium, les joueurs peuvent désormais utiliser n'importe quelle manette compatible XInput, et les vibrations ont été ajoutées en même temps. Concrètement, cela signifie que le jeu lit directement votre manette au lieu de passer par une couche de traduction.
+
+| Époque | Comment les joueurs utilisaient une manette | Fiabilité |
+|---|---|---|
+| Premières versions | Remappeurs clavier-vers-manette, profils Companion personnalisés | Fonctionnel mais fragile ; à reconstruire à chaque configuration |
+| À partir du patch 2023 | Prise en charge XInput intégrée avec vibrations | Constant, plug-and-play sur les manettes compatibles |
+| Configurations modernes | Prise en charge officielle plus Steam Input pour les manettes non XInput | Meilleure compatibilité entre les marques |
+
+Si vous utilisez un téléchargement plus ancien, la première étape de dépannage consiste simplement à mettre à jour vers une version publiée après ce patch. De nombreux signalements « ma manette ne fonctionne pas » remontent à des versions antérieures au patch.
+
+## Quelles manettes fonctionnent avec Pokemon Uranium ?
+
+La réponse courte : toute manette qui se présente à Windows comme un périphérique XInput. XInput est le standard de manette de Microsoft, et c'est pour lui qu'a été conçue la prise en charge intégrée des manettes de Pokemon Uranium.
+
+| Manette | Comment se connecter | Fonctionne nativement ? | Remarques |
+|---|---|---|---|
+| Manette Xbox 360 | USB ou récepteur sans fil | Oui | Le périphérique XInput de référence |
+| Xbox One / Series X\|S | USB-C, Bluetooth ou adaptateur | Oui | Meilleure expérience globale |
+| Manettes 8BitDo (mode XInput) | USB ou Bluetooth | Oui | Passez d'abord la manette en mode X |
+| Logitech F310 / F710 | USB | Oui, en mode X | Basculez l'interrupteur à l'arrière sur X |
+| DualShock 4 / DualSense | USB ou Bluetooth | Pas directement | Encapsulez avec Steam Input ou DS4Windows |
+| Manette Switch Pro | Bluetooth | Pas directement | Utilisez Steam Input ou un outil d'encapsulation |
+
+Le schéma est simple. Les manettes de type Xbox et les manettes tierces dotées d'un mode XInput sont reconnues immédiatement. Les manettes Sony et Nintendo utilisent un protocole différent, Windows a donc besoin d'aide pour les présenter comme des périphériques XInput avant que le jeu ne les détecte.
+
+## Comment configurer la prise en charge des manettes dans Pokemon Uranium
+
+La configuration prend environ deux minutes une fois que vous connaissez l'ordre des opérations. L'erreur la plus courante consiste à lancer le jeu avant de connecter la manette, ce qui peut laisser le jeu en attente d'entrées provenant d'un périphérique qui n'existe pas encore.
+
+| Étape | Action | Pourquoi c'est important |
+|---|---|---|
+| 1 | Connectez la manette et laissez Windows terminer l'installation du pilote | Le jeu recherche les manettes au lancement |
+| 2 | Vérifiez que la manette est détectée dans les paramètres de contrôleur de jeu de Windows | Écarte d'emblée les problèmes de câble et de pilote |
+| 3 | Lancez Pokemon Uranium | Les périphériques d'entrée sont enregistrés au démarrage |
+| 4 | Ouvrez le menu pause et consultez l'écran Options | Les réglages de vibration et d'entrée s'y trouvent |
+| 5 | Testez avec un combat et le menu de l'équipe | Vérifie les entrées dans les menus et sur le terrain |
+| 6 | Relancez si rien ne répond | Force le jeu à rechercher à nouveau la manette |
+
+### Voie A : manette XInput de type Xbox
+
+Branchez, attendez le signal sonore du pilote, lancez le jeu et jouez. Si la manette est reconnue dans Windows, le jeu devrait la détecter sans autre intervention. C'est la voie la plus simple pour obtenir une prise en charge fonctionnelle des manettes dans Pokemon Uranium.
+
+### Voie B : manette PlayStation ou Switch
+
+Vous avez deux options pratiques. Steam Input est la plus simple si Steam est installé — ajoutez le jeu comme raccourci non-Steam, puis activez la prise en charge des manettes pour cette entrée. DS4Windows est l'alternative ; il crée une manette Xbox virtuelle que le jeu lit comme un périphérique XInput. Dans tous les cas, fermez l'autre outil avant de lancer le jeu pour éviter les entrées en double.
+
+### Voie C : manettes DirectInput plus anciennes
+
+Si votre manette est antérieure à XInput, un remappeur clavier-vers-manette reste la solution. Des outils comme reWASD vous permettent de créer une configuration personnalisée qui associe les mouvements du stick et les boutons aux commandes clavier du jeu, ce qui correspond exactement au cas d'usage décrit sur leur page de profil de prise en charge des manettes pour Pokemon Uranium. Les profils Companion créés par la communauté sur le Steam Workshop adoptent une approche similaire, et l'un d'eux associe même la course automatique au bouton X dans le menu pause.
+
+## Mappage des boutons, vibrations et options de remappage
+
+C'est ici que les joueurs rencontrent le plus de frictions. Des discussions sur les forums communautaires, qui remontent à des années, posent la même question : existe-t-il un moyen de remapper les boutons pour les entrées de la manette ? La réponse dépend de votre version et de votre manette, mais le tableau ci-dessous présente la disposition typique rapportée par les joueurs.
+
+| Action | Touche clavier par défaut | Bouton de manette typique |
+|---|---|---|
+| Se déplacer | Touches fléchées | Stick gauche / croix directionnelle |
+| Confirmer, parler, sélectionner | Z ou Entrée | A |
+| Annuler, retour, fermer le menu | X ou Échap | B |
+| Ouvrir le menu pause | Échap ou une touche de menu | Start |
+| Courir | Maj (maintenue) | Souvent associée à un bouton de tranche ou au clic du stick |
+| Activation des vibrations | — | Se trouve dans l'écran Options |
+
+Deux choses méritent d'être connues. Premièrement, si votre manette prend en charge les vibrations, activez-les dans l'écran Options — la mise à jour de 2023 a ajouté les vibrations, mais elles peuvent être désactivées. Deuxièmement, si votre version du jeu n'expose pas d'écran de remappage intégré, un remappeur s'en charge : attribuez les touches souhaitées aux boutons souhaités, enregistrez le profil et lancez le jeu via l'outil.
+
+| Outil de remappage | Idéal pour | Difficulté | Transmission des vibrations |
+|---|---|---|---|
+| Écran Options intégré | Ajustements mineurs | Très facile | Oui |
+| Steam Input | DualSense, Switch Pro, dispositions personnalisées | Modérée | Partielle |
+| DS4Windows | Manettes Sony sous Windows | Modérée | Oui |
+| reWASD / profils Companion | Manettes DirectInput, macros, bascules de course automatique | Facile à modérée | Variable |
+
+## Résolution des problèmes courants de prise en charge des manettes dans Pokemon Uranium
+
+La plupart des problèmes se répartissent en quelques catégories. Parcourez ce tableau avant de conclure que votre manette est incompatible.
+
+| Symptôme | Cause probable | Solution |
+|---|---|---|
+| Le jeu ignore complètement la manette | La manette n'est pas en mode XInput | Basculez l'interrupteur de mode ou utilisez DS4Windows |
+| Les boutons sont inversés ou étranges | Incohérence de disposition entre la manette et le jeu | Remappez dans les Options ou via un remappeur |
+| Chaque appui est enregistré deux fois | Deux couches d'entrée actives en même temps | Désactivez Steam Input ou fermez le remappeur |
+| Le déplacement dérive tout seul | Usure du stick ou zone morte trop petite | Augmentez la zone morte dans votre remappeur |
+| Pas de vibrations | Vibrations désactivées ou manette non compatible | Activez-les dans les Options ; vérifiez les spécifications de la manette |
+| Fonctionne dans les menus, pas en combat | Le focus est passé à une fenêtre en arrière-plan | Cliquez sur la fenêtre du jeu, puis retestez |
+
+Quelques habitudes permettent d'éviter la plupart de ces problèmes. Connectez la manette avant de lancer le jeu, n'exécutez qu'un seul outil d'entrée à la fois et conservez un profil unique enregistré que vous pouvez recharger après une mise à jour de Windows. Si le jeu refuse toujours de détecter la manette, testez-la dans un autre jeu pour confirmer que le matériel lui-même fonctionne.
+
+## FAQ
+
+**Pokemon Uranium dispose-t-il d'une prise en charge officielle des manettes ?**
+Oui. Les notes de patch 2023 du jeu ont ajouté une prise en charge intégrée de toute manette compatible XInput, ainsi que les vibrations. Avant cette mise à jour, la prise en charge des manettes dans Pokemon Uranium reposait sur des outils de remappage tiers et des profils créés par la communauté.
+
+**Puis-je utiliser une DualSense de PS5 ou une manette Switch Pro ?**
+Pas directement, car aucune de ces manettes ne parle XInput. Encapsulez-les avec Steam Input ou DS4Windows afin que Windows les présente comme une manette de type Xbox, puis lancez le jeu. Les joueurs rapportent que cela fonctionne bien une fois qu'un seul outil est actif.
+
+**Comment remapper les boutons pour la prise en charge des manettes dans Pokemon Uranium ?**
+Consultez d'abord l'écran Options du jeu — certaines versions y exposent les réglages d'entrée. Si ce n'est pas le cas de la vôtre, utilisez un remappeur tel que Steam Input, DS4Windows ou un utilitaire clavier-vers-manette, et enregistrez la disposition sous forme de profil rechargeable.
+
+**Pourquoi les vibrations de ma manette ne fonctionnent-elles pas ?**
+Les vibrations ont été ajoutées avec la mise à jour de prise en charge officielle, alors vérifiez que vous disposez d'une version à jour et que les vibrations sont activées dans l'écran Options. Les manettes plus anciennes et certains modèles tiers ne prennent pas du tout en charge les vibrations, et les manettes DirectInput remappées les perdent généralement.
+
+**Une manette est-elle meilleure qu'un clavier pour Uranium ?**
+Pour la plupart des joueurs, oui. Les déplacements et les menus de combat se mappent naturellement sur une croix directionnelle et deux boutons de façade, et les longues sessions sont plus douces pour les mains. Le clavier reste toutefois supérieur pour ceux qui préfèrent les raccourcis de menu précis ou qui jouent sur un ordinateur portable sans port USB libre.

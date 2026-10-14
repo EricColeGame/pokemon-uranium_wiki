@@ -1,0 +1,132 @@
+export const metadata = {
+  title: "Suporte a Controle no Pokemon Uranium: Guia Completo de Configuração, Mapeamento e Correções",
+  description: "Aprenda como funciona o suporte a controle no Pokemon Uranium, desde a configuração oficial de XInput até remapeamento de botões, vibração e correções para problemas comuns de gamepad.",
+  category: "controls",
+  date: "2026-10-14",
+}
+
+## Por Que o Suporte a Controle no Pokemon Uranium Importa
+
+O suporte a controle no Pokemon Uranium costumava ser uma colcha de retalhos de tópicos em fóruns, remapeadores de terceiros e tentativa e erro. Hoje é um recurso integrado, e essa única mudança transforma como esse RPG feito por fãs é sentido em um monitor ou TV. Se você já encarou uma rota longa com o teclado, você já sabe por que isso importa: movimentação baseada em tiles, navegação constante por menus e encontros selvagens infinitos são simplesmente mais confortáveis com um gamepad nas mãos.
+
+Pokemon Uranium é um RPG feito por fãs construído no RPG Maker XP e na framework Pokémon Essentials. Como a maioria dos jogos feitos com esse kit, ele foi projetado em torno de um teclado primeiro — setas para andar, uma tecla de letra para confirmar, outra para cancelar. Esse layout funciona, mas nunca chegou a parecer com os jogos Pokémon portáteis que o inspiraram. Um suporte a controle adequado no Pokemon Uranium fecha essa lacuna.
+
+A diferença aparece mais rápido nos momentos que você repete centenas de vezes por jogada:
+
+| Tarefa no jogo | Teclado | Gamepad | Por que é melhor |
+|---|---|---|---|
+| Andar por rotas longas | Setas | Analógico esquerdo ou D-pad | Movimento com o polegar, sem fadiga no pulso |
+| Confirmar / interagir | Z ou Enter | Botão A | Combina com a memória muscular de portáteis |
+| Cancelar / voltar | X ou Esc | Botão B | Mesmo layout do hardware Nintendo |
+| Navegação no menu de batalha | Setas + Z | D-pad + A | Fluxo turno a turno mais rápido |
+| Ordenação de itens segurados e equipe | Setas + confirmar | Analógico + A | Menos caça às teclas |
+
+Para quem está voltando ao Uranium depois de anos, um controle também é a forma mais rápida de reaprender os comandos. Suas mãos já sabem onde ficam "confirmar" e "cancelar".
+
+## Quando o Pokemon Uranium Adicionou Suporte Oficial a Controle?
+
+Durante a maior parte da vida do jogo, jogar com um controle significava enganar o jogo para que ele pensasse que um controle era um teclado. Relatos da comunidade descrevem jogadores criando perfis do Controller Companion para o processo `Uranium.exe`, ou usando utilitários de remapeamento de teclado para gamepad para traduzir a entrada do analógico em teclas de seta. Essas configurações funcionavam, mas precisavam ser refeitas sempre que o jogador trocava de hardware, e raramente lidavam bem com movimento analógico ou rumble.
+
+Isso mudou com as notas de patch de 2023 do jogo, que anunciaram suporte oficial a controle. De acordo com a documentação de patches da Wiki do Pokémon Uranium, os jogadores agora podem usar qualquer controle compatível com XInput, e a vibração foi adicionada junto. Na prática, isso significa que o jogo lê seu controle diretamente, em vez de através de uma camada de tradução.
+
+| Época | Como os jogadores usavam um gamepad | Confiabilidade |
+|---|---|---|
+| Builds antigas | Remapeadores de teclado para gamepad, perfis personalizados do Companion | Funcional mas frágil; refeito a cada configuração |
+| Patch de 2023 em diante | Suporte XInput integrado com vibração | Consistente, plug-and-play em controles compatíveis |
+| Configurações modernas | Suporte oficial mais Steam Input para controles não-XInput | Melhor compatibilidade entre marcas |
+
+Se você está usando um download antigo, o primeiro passo de solução de problemas é simplesmente atualizar para uma build lançada depois desse patch. Muitos relatos de "meu controle não funciona" remontam a versões anteriores ao patch.
+
+## Quais Controles Funcionam com o Pokemon Uranium?
+
+A resposta curta: qualquer controle que se apresente ao Windows como um dispositivo XInput. XInput é o padrão de gamepad da Microsoft, e foi para ele que o suporte a controle integrado do Pokemon Uranium foi escrito.
+
+| Controle | Como conectar | Funciona nativamente? | Observações |
+|---|---|---|---|
+| Controle Xbox 360 | USB ou receptor sem fio | Sim | O dispositivo XInput de referência |
+| Xbox One / Series X\|S | USB-C, Bluetooth ou adaptador | Sim | Melhor experiência geral |
+| Controles 8BitDo (modo XInput) | USB ou Bluetooth | Sim | Coloque o controle em modo X primeiro |
+| Logitech F310 / F710 | USB | Sim, em modo X | Vire a chave na parte de trás para X |
+| DualShock 4 / DualSense | USB ou Bluetooth | Não diretamente | Envolva com Steam Input ou DS4Windows |
+| Switch Pro Controller | Bluetooth | Não diretamente | Use Steam Input ou uma ferramenta wrapper |
+
+O padrão é simples. Controles no estilo Xbox e controles de terceiros com um modo XInput são reconhecidos imediatamente. Controles Sony e Nintendo falam um protocolo diferente, então o Windows precisa de ajuda para apresentá-los como XInput antes que o jogo os veja.
+
+## Como Configurar o Suporte a Controle no Pokemon Uranium
+
+A configuração leva cerca de dois minutos depois que você conhece a ordem das operações. O erro mais comum é iniciar o jogo antes que o controle esteja conectado, o que pode deixar o jogo procurando entrada de um dispositivo que ainda não existe.
+
+| Passo | Ação | Por que importa |
+|---|---|---|
+| 1 | Conecte o controle e deixe o Windows terminar a instalação do driver | O jogo procura controles na inicialização |
+| 2 | Confirme que o controle é detectado nas configurações de controle de jogo do Windows | Descarta problemas de cabo e driver desde cedo |
+| 3 | Inicie o Pokemon Uranium | Dispositivos de entrada são registrados na inicialização |
+| 4 | Abra o menu de pausa e verifique a tela de Opções | As configurações de vibração e entrada ficam aqui |
+| 5 | Teste com uma batalha e o menu de equipe | Verifica entrada tanto de menu quanto de campo |
+| 6 | Reinicie se nada responder | Força o jogo a procurar o controle novamente |
+
+### Caminho A: Controle XInput no Estilo Xbox
+
+Conecte, espere o som do driver, inicie o jogo e jogue. Se o controle for reconhecido no Windows, o jogo deve detectá-lo sem nenhum trabalho adicional. Esta é a rota mais tranquila para ter o suporte a controle do Pokemon Uranium funcionando.
+
+### Caminho B: Controle PlayStation ou Switch
+
+Você tem duas opções práticas. O Steam Input é o mais fácil se você tem o Steam instalado — adicione o jogo como atalho não-Steam, depois ative o suporte a controle para essa entrada. O DS4Windows é a alternativa; ele cria um controle Xbox virtual que o jogo lê como XInput. De qualquer forma, feche a outra ferramenta antes de iniciar para evitar entrada dupla.
+
+### Caminho C: Controles DirectInput Mais Antigos
+
+Se seu controle é anterior ao XInput, um remapeador de teclado para gamepad ainda é a resposta. Ferramentas como o reWASD permitem que você construa uma configuração personalizada que mapeia o movimento do analógico e os botões para os comandos de teclado do jogo, que é exatamente o caso de uso que a página de perfil de suporte a controle do Pokemon Uranium deles descreve. Perfis do Companion feitos pela comunidade na Steam Workshop adotam uma abordagem semelhante, e um deles até mapeia o auto-run para o botão X dentro do menu de pausa.
+
+## Mapeamento de Botões, Vibração e Opções de Remapeamento
+
+Aqui é onde os jogadores encontram mais atrito. Tópicos em fóruns da comunidade que remontam anos fazem a mesma pergunta: existe uma forma de remapear botões para entrada de controle? A resposta depende da sua build e do seu controle, mas a tabela abaixo cobre o layout típico relatado pelos jogadores.
+
+| Ação | Padrão do teclado | Botão típico do gamepad |
+|---|---|---|
+| Mover | Setas | Analógico esquerdo / D-pad |
+| Confirmar, falar, selecionar | Z ou Enter | A |
+| Cancelar, voltar, fechar menu | X ou Esc | B |
+| Abrir menu de pausa | Esc ou uma tecla de menu | Start |
+| Correr | Shift (segurado) | Frequentemente mapeado para um botão de ombro ou clique do analógico |
+| Alternar vibração | — | Encontrado na tela de Opções |
+
+Duas coisas valem a pena saber. Primeiro, se seu controle suporta vibração, ative-a na tela de Opções — a atualização de 2023 adicionou rumble, mas ele pode ser desligado. Segundo, se sua build do jogo não expõe uma tela de remapeamento interna, um remapeador resolve: atribua as teclas que você quer aos botões que você quer, salve o perfil e inicie o jogo através da ferramenta.
+
+| Ferramenta de remapeamento | Melhor para | Dificuldade | Passagem de rumble |
+|---|---|---|---|
+| Tela de Opções integrada | Ajustes menores | Muito fácil | Sim |
+| Steam Input | DualSense, Switch Pro, layouts personalizados | Moderada | Parcial |
+| DS4Windows | Controles Sony no Windows | Moderada | Sim |
+| reWASD / perfis do Companion | Controles DirectInput, macros, alternâncias de auto-run | Fácil a moderada | Varia |
+
+## Solução de Problemas Comuns de Suporte a Controle no Pokemon Uranium
+
+A maioria dos problemas se encaixa em algumas categorias. Percorra esta tabela antes de assumir que seu controle é incompatível.
+
+| Sintoma | Causa provável | Correção |
+|---|---|---|
+| O jogo ignora o controle por completo | O controle não está em modo XInput | Vire a chave de modo ou use o DS4Windows |
+| Botões estão trocados ou estranhos | Incompatibilidade de layout entre controle e jogo | Remapeie em Opções ou através de um remapeador |
+| Cada pressionada registra duas vezes | Duas camadas de entrada ativas ao mesmo tempo | Desative o Steam Input ou feche o remapeador |
+| O movimento se desloca sozinho | Desgaste do analógico ou uma zona morta pequena demais | Aumente a zona morta no seu remapeador |
+| Sem vibração | Rumble desativado ou controle sem suporte | Ative em Opções; verifique as especificações do controle |
+| Funciona em menus, não em batalha | Foco perdido para uma janela em segundo plano | Clique na janela do jogo, depois teste novamente |
+
+Alguns hábitos previnem a maioria desses problemas. Conecte o controle antes de iniciar, execute apenas uma ferramenta de entrada por vez e mantenha um único perfil salvo que você possa recarregar após uma atualização do Windows. Se o jogo ainda se recusar a ver o controle, teste-o em outro título para confirmar que o próprio hardware está bem.
+
+## FAQ
+
+**O Pokemon Uranium tem suporte oficial a controle?**
+Sim. As notas de patch de 2023 do jogo adicionaram suporte integrado para qualquer controle compatível com XInput, junto com vibração. Antes dessa atualização, o suporte a controle no Pokemon Uranium dependia de ferramentas de remapeamento de terceiros e perfis feitos pela comunidade.
+
+**Posso usar um DualSense do PS5 ou um Switch Pro Controller?**
+Não diretamente, porque nenhum dos dois controles fala XInput. Envolva-os com Steam Input ou DS4Windows para que o Windows os apresente como um controle no estilo Xbox, depois inicie o jogo. Jogadores relatam que isso funciona bem quando apenas uma ferramenta está ativa.
+
+**Como faço para remapear botões para o suporte a controle no Pokemon Uranium?**
+Verifique primeiro a tela de Opções do jogo — algumas builds expõem configurações de entrada ali. Se a sua não expõe, use um remapeador como Steam Input, DS4Windows ou um utilitário de teclado para gamepad, e salve o layout como um perfil que você possa recarregar.
+
+**Por que o rumble do meu controle não funciona?**
+A vibração foi adicionada com a atualização de suporte oficial, então confirme que você está em uma build atual e que o rumble está ativado na tela de Opções. Controles mais antigos e alguns modelos de terceiros não suportam vibração de forma alguma, e controles DirectInput remapeados geralmente a perdem.
+
+**Um controle é melhor que um teclado para o Uranium?**
+Para a maioria dos jogadores, sim. Movimentação e menus de batalha se mapeiam naturalmente para um D-pad e dois botões de face, e sessões longas são mais fáceis para as suas mãos. O teclado ainda vence para quem prefere atalhos de menu precisos ou joga em um notebook sem uma porta USB sobrando.

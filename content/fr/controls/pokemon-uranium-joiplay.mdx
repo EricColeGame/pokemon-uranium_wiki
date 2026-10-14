@@ -1,0 +1,128 @@
+export const metadata = {
+  title: "Commandes de Pokemon Uranium sur JoiPlay : jouez à Uranium sur Android comme il faut",
+  description: "Configurez Pokemon Uranium dans JoiPlay sur Android, mappez chaque bouton, améliorez les performances et résolvez les problèmes de commandes courants grâce à ce guide pratique du joueur.",
+  category: "controls",
+  date: "2026-10-14",
+}
+
+Pokemon Uranium est l’un des RPG amateurs les plus ambitieux jamais achevés : une aventure complète avec huit arènes, treize villes, plus de 190 espèces capturables et des fonctionnalités modernes comme l’Échange Miracle, le Cadeau Mystère et la Méga-Évolution. Il a toutefois été conçu pour Windows — et c’est précisément pourquoi tant de joueurs recherchent une configuration Pokemon Uranium JoiPlay qui leur permet d’emporter toute la région de Tandor dans leur poche.
+
+JoiPlay est une application Android qui exécute les jeux RPG Maker, et avec le bon plugin et le bon mappage des boutons, Pokemon Uranium JoiPlay devient une véritable expérience portable confortable plutôt qu’un festival de tapotements à l’étroit. Ce guide couvre l’installation, la cartographie complète des commandes, le réglage des performances et les problèmes de saisie les plus souvent signalés par les joueurs.
+
+## Pourquoi JoiPlay est la façon pratique de jouer à Uranium sur Android
+
+Uranium a été développé avec RPG Maker XP, la même famille de moteurs que celle derrière la plupart des jeux amateurs Pokémon Essentials. C’est important, car le plugin RPG Maker de JoiPlay a été écrit spécifiquement pour ces moteurs — le jeu peut donc se lancer sans les contournements d’émulation qu’il faudrait pour un titre Game Boy Advance ou DS.
+
+La contrepartie, c’est que rien dans ce portage n’est automatique. Vous êtes responsable des fichiers, de la structure des dossiers et de la disposition des boutons. Une fois cela fait, cependant, l’expérience tient étonnamment bien la route.
+
+| Aspect | Jouer sur PC | Jouer dans JoiPlay sur Android |
+| --- | --- | --- |
+| Installation | Programme d’installation Windows standard | Copie manuelle du dossier plus configuration de JoiPlay |
+| Commandes | Clavier ou manette USB | Manette à l’écran ou manette Bluetooth |
+| Fichiers de sauvegarde | Stockés dans votre dossier Saved Games | Stockés dans le dossier de jeu copié |
+| Performances | Vitesse maximale sur presque n’importe quel PC | Dépend du chipset, de la RAM et du throttling thermique |
+| Mises à jour | Retéléchargement ou correctif sur ordinateur | Copie des nouveaux fichiers par-dessus l’ancien dossier |
+| Portabilité | Lié au bureau | Jouez partout, reprenez avec la même sauvegarde |
+
+Sur ordinateur, le jeu s’installe dans un répertoire de programmes par défaut et conserve les sauvegardes dans un chemin Saved Games distinct. Sur Android, tout se trouve dans le dossier que vous copiez, ce qui simplifie les sauvegardes — il suffit de dupliquer le dossier.
+
+## Ce dont vous avez besoin avant d’installer Pokemon Uranium JoiPlay
+
+Rassemblez d’abord tout le nécessaire. La moitié des plaintes « ça ne se lance pas » sur les forums communautaires se résument à un plugin manquant ou à un dossier de jeu copié de façon incomplète.
+
+| Prérequis | Pourquoi c’est important | Remarques |
+| --- | --- | --- |
+| Application JoiPlay | L’hôte qui lance le jeu | À installer avant tout le reste |
+| Plugin RPG Maker | Ajoute la prise en charge de RPG Maker XP/VX | Doit correspondre à votre version de JoiPlay |
+| Fichiers du jeu Uranium | Le dossier de jeu proprement dit | Conservez le dossier complet, pas seulement l’exécutable |
+| Espace de stockage libre | Fichiers de jeu plus données de sauvegarde | Quelques gigaoctets de marge sont confortables |
+| Android 8 ou plus récent | Compatibilité des plugins | Les versions plus récentes se comportent généralement mieux |
+| Manette Bluetooth (facultatif) | Déplacements plus précis | Fortement recommandée pour les longues sessions |
+
+Une note sur les sources : le wiki communautaire héberge le téléchargement actuellement recommandé, et c’est l’endroit le plus sûr pour récupérer les fichiers du jeu. Vous le trouverez sur la [page de téléchargement du wiki communautaire Pokemon Uranium](https://pokemon-uranium.fandom.com/wiki/Download), qui répertorie également les emplacements standards d’installation et de sauvegarde sur PC.
+
+L’ensemble des fonctionnalités d’Uranium explique en partie pourquoi ce portage vaut l’effort : les modes Randomizer et Nuzlocke, le Poké Radar pour la chasse aux chromatiques, la GTS, les combats contre les Dresseurs virtuels, plusieurs fichiers de sauvegarde et un Lobby pour échanger et combattre avec des amis.
+
+## Étape par étape : installer Pokemon Uranium dans JoiPlay
+
+La configuration est courte mais l’ordre des étapes compte. Sauter une étape signifie généralement un écran noir ou un plantage immédiat.
+
+| Étape | Action | Astuce |
+| --- | --- | --- |
+| 1 | Installez l’application JoiPlay | Autorisez les installations depuis la source de votre choix |
+| 2 | Installez le plugin RPG Maker | Faites-le avant d’ouvrir le moindre jeu |
+| 3 | Extrayez le dossier Uranium | Évitez d’exécuter directement depuis une archive compressée |
+| 4 | Déplacez le dossier vers le stockage interne | Les cartes SD peuvent ralentir le chargement des ressources |
+| 5 | Ouvrez JoiPlay et appuyez sur « Add Game » | Pointez-le vers le dossier, pas vers un raccourci |
+| 6 | Sélectionnez l’exécutable du jeu | C’est le fichier que le plugin lance |
+| 7 | Nommez l’entrée et définissez une icône | Facilite la gestion de plusieurs jeux |
+| 8 | Lancez une fois, puis configurez les commandes | Vérifiez qu’il démarre avant de personnaliser les boutons |
+
+Après le premier lancement réussi, fermez le jeu et configurez vos commandes. Procéder dans cet ordre vous évite d’accuser la disposition des boutons d’un problème qui est en réalité un problème de fichiers.
+
+## Commandes de Pokemon Uranium JoiPlay : le tableau de mappage complet
+
+Uranium utilise le schéma de commandes standard de RPG Maker XP, ce qui signifie qu’une poignée de touches de clavier pilote tout. Dans JoiPlay, vous assignez ces mêmes touches à des boutons à l’écran ou à une manette physique.
+
+| Action en jeu | Touche par défaut courante | À assigner à |
+| --- | --- | --- |
+| Se déplacer | Touches fléchées | Croix directionnelle ou stick gauche |
+| Confirmer, parler, interagir | C ou Entrée | Bouton A |
+| Annuler, retour, fermer le menu | X ou Échap | Bouton B |
+| Ouvrir le menu pause | Entrée ou la touche d’annulation sur la carte | Bouton Menu |
+| Courir | Maintenir Maj ou la touche de course | Bouton de tranche (maintenir) |
+| Réinitialisation logicielle | F12 | Petit bouton en coin |
+| Basculer la taille de l’écran | F5 | Petit bouton en coin |
+| Fenêtre des paramètres RPG Maker | F1 | Facultatif, rarement nécessaire |
+
+Deux remarques pratiques tirées de l’expérience des joueurs. Premièrement, assigner la course à un bouton de tranche est bien plus confortable que de maintenir un bouton frontal tout en dirigeant avec la croix directionnelle. Deuxièmement, les assignations exactes des lettres peuvent légèrement varier selon les versions du jeu et du plugin ; vérifiez donc les touches dans les options du jeu ou le menu pause avant de finaliser votre disposition.
+
+Pour les utilisateurs de manette, la plupart des manettes Bluetooth se mappent sans problème : croix directionnelle pour les déplacements, A pour confirmer, B pour annuler et un bouton de tranche pour courir. Les retours de la communauté indiquent que cette configuration se rapproche le plus de l’expérience sur console portable.
+
+## Disposition tactile et réglage des performances pour des commandes fluides
+
+Les entrées perdues dans JoiPlay ne sont presque jamais un bug — c’est un problème de disposition ou de performances. Corrigez d’abord la disposition, puis traquez le taux de rafraîchissement.
+
+| Paramètre | Valeur recommandée | Pourquoi |
+| --- | --- | --- |
+| Taille des boutons | 110–130 % | Plus faciles à atteindre en marchant en diagonale |
+| Opacité des boutons | 60–80 % | Garde les boîtes de dialogue lisibles |
+| Position de la croix directionnelle | En bas à gauche, légèrement en retrait | Les pouces reposent naturellement en portrait ou en paysage |
+| Position de A/B | En bas à droite, A au-dessus de B | Reproduit la mémoire musculaire des consoles |
+| Entrée diagonale | À activer si disponible | Évite les déplacements « collants » sur les bords des cases |
+| Applications en arrière-plan | À fermer avant de jouer | Libère de la RAM pour les animations de combat |
+| Mise à l’échelle de la résolution de l’appareil | À réduire en cas de saccades | Le levier de performance le plus important |
+
+Quelques habitudes supplémentaires qui aident : gardez l’appareil à l’abri du soleil direct pendant les longues sessions, car le throttling thermique provoque des chutes soudaines de framerate qui ressemblent à de la latence des commandes ; sauvegardez souvent avec la fonction de sauvegarde du jeu plutôt que de compter sur le changement d’application ; et maintenez l’application JoiPlay et son plugin à jour ensemble.
+
+Si les combats avec effets météo saccadent alors que l’exploration tourne bien, il s’agit d’un problème de charge GPU plutôt que de commandes — réduisez l’échelle de rendu et cela se règle généralement.
+
+## Résoudre les problèmes de commandes les plus courants de Pokemon Uranium JoiPlay
+
+| Symptôme | Cause probable | Solution |
+| --- | --- | --- |
+| Aucun bouton ne répond | Le jeu a été lancé sans le plugin | Réinstallez le plugin RPG Maker, relancez |
+| Le personnage se déplace mais n’interagit jamais | La touche de confirmation n’est pas assignée | Assignez C ou Entrée à un bouton frontal |
+| Le menu s’ouvre par accident | La touche d’annulation est mappée sur un bouton souvent pressé | Éloignez-la du côté de la croix directionnelle |
+| Les commandes semblent retardées | Chutes de framerate, pas de latence | Réduisez la mise à l’échelle de la résolution, fermez les applications en arrière-plan |
+| Le jeu plante au démarrage | Copie de dossier incomplète | Recopiez l’intégralité du dossier de jeu |
+| Les sauvegardes disparaissent | Fichiers stockés en dehors du dossier de jeu | Gardez tout à l’intérieur du répertoire copié |
+| Les boutons chevauchent le dialogue | Disposition trop basse ou trop grande | Remontez la croix directionnelle et réduisez la taille des boutons |
+
+L’étape de dépannage la plus efficace consiste à tester avec le clavier virtuel activé. Si le jeu répond aux entrées du clavier mais pas à vos boutons, le problème vient de votre mappage. S’il ignore aussi le clavier, le problème vient de l’installation.
+
+## FAQ
+
+**Puis-je jouer à Pokemon Uranium JoiPlay sans manette ?**
+Oui. La manette à l’écran est parfaitement utilisable une fois que vous avez correctement dimensionné et positionné les boutons. Une manette Bluetooth reste plus confortable pour les longues sessions, en particulier pour le farm et la chasse aux chromatiques.
+
+**Pourquoi mon personnage continue-t-il de bouger après que je retire mon pouce ?**
+C’est généralement un problème d’entrée diagonale ou de chevauchement de boutons. Activez la gestion des diagonales si votre plugin le prend en charge, et assurez-vous qu’aucun bouton invisible ne se trouve sous votre croix directionnelle.
+
+**Puis-je transférer ma sauvegarde entre PC et Android ?**
+Oui. Uranium stocke les sauvegardes dans le répertoire du jeu, donc copier les fichiers de sauvegarde dans le dossier correspondant sur l’autre appareil transfère votre progression. Sauvegardez le dossier avant de le faire.
+
+**Dois-je refaire mes commandes Pokemon Uranium JoiPlay après une mise à jour du jeu ?**
+En général, non, mais une mise à jour du plugin peut réinitialiser les mappages. Lancez le jeu une fois après chaque mise à jour et vérifiez que confirmer, annuler et courir répondent toujours avant de commencer une longue session de jeu.
+
+Réglez la disposition une bonne fois pour toutes et le reste du jeu — les huit arènes, les quêtes annexes et les plus de 190 espèces — se joue exactement comme il faut : un pouce sur la croix directionnelle, un sur le bouton de confirmation, et aucune raison de retourner au bureau.

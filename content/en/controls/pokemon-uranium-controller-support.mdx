@@ -1,0 +1,132 @@
+export const metadata = {
+  title: "Pokemon Uranium Controller Support: Full Setup, Mapping, and Fixes Guide",
+  description: "Learn how Pokemon Uranium controller support works, from official XInput setup to button remapping, vibration, and fixes for common gamepad problems.",
+  category: "controls",
+  date: "2026-10-14",
+}
+
+## Why Pokemon Uranium Controller Support Matters
+
+Pokemon Uranium controller support used to be a patchwork of forum threads, third-party remappers, and trial and error. Today it is a built-in feature, and that one change transforms how this fan-made RPG feels on a monitor or TV. If you have ever ground through a long route with a keyboard, you already know why it matters: tile-based movement, constant menu navigation, and endless wild encounters are simply more comfortable with a gamepad in your hands.
+
+Pokemon Uranium is a fan-made RPG built on RPG Maker XP and the Pokémon Essentials framework. Like most games made with that toolkit, it was designed around a keyboard first — arrow keys to walk, one letter key to confirm, another to cancel. That layout works, but it never quite felt like the handheld Pokémon games that inspired it. Proper Pokemon Uranium controller support closes that gap.
+
+The difference shows up fastest in the moments you repeat hundreds of times per playthrough:
+
+| In-game task | Keyboard | Gamepad | Why it feels better |
+|---|---|---|---|
+| Walking long routes | Arrow keys | Left stick or D-pad | Thumb movement, no wrist fatigue |
+| Confirm / interact | Z or Enter | A button | Matches handheld muscle memory |
+| Cancel / back | X or Esc | B button | Same layout as Nintendo hardware |
+| Battle menu navigation | Arrow keys + Z | D-pad + A | Faster turn-by-turn flow |
+| Held item and party sorting | Arrow keys + confirm | Stick + A | Less key hunting |
+
+For anyone returning to Uranium after years away, a controller is also the fastest way to relearn the controls. Your hands already know where "confirm" and "cancel" live.
+
+## When Did Pokemon Uranium Add Official Controller Support?
+
+For most of the game's life, playing with a pad meant tricking the game into thinking a controller was a keyboard. Community reports describe players building Controller Companion profiles for the `Uranium.exe` process, or using keyboard-to-gamepad remapping utilities to translate stick input into arrow keys. Those setups worked, but they had to be rebuilt whenever a player changed hardware, and they rarely handled analog movement or rumble well.
+
+That changed with the game's 2023 patch notes, which announced official controller support. According to the Pokémon Uranium Wiki's patch documentation, players can now use any XInput-compatible controller, and vibration was added alongside it. In practice, that means the game reads your pad directly instead of through a translation layer.
+
+| Era | How players used a gamepad | Reliability |
+|---|---|---|
+| Early builds | Keyboard-to-pad remappers, custom Companion profiles | Functional but fragile; rebuilt per setup |
+| 2023 patch onward | Built-in XInput support with vibration | Consistent, plug-and-play on supported pads |
+| Modern setups | Official support plus Steam Input for non-XInput pads | Best compatibility across brands |
+
+If you are running an older download, the first troubleshooting step is simply updating to a build released after that patch. Many "my controller doesn't work" reports trace back to pre-patch versions.
+
+## Which Controllers Work With Pokemon Uranium?
+
+The short answer: any controller that reports itself to Windows as an XInput device. XInput is Microsoft's gamepad standard, and it is what the game's built-in Pokemon Uranium controller support was written for.
+
+| Controller | How to connect | Works natively? | Notes |
+|---|---|---|---|
+| Xbox 360 pad | USB or wireless receiver | Yes | The reference XInput device |
+| Xbox One / Series X\|S | USB-C, Bluetooth, or adapter | Yes | Best overall experience |
+| 8BitDo pads (XInput mode) | USB or Bluetooth | Yes | Switch the pad to X mode first |
+| Logitech F310 / F710 | USB | Yes, in X mode | Flip the switch on the back to X |
+| DualShock 4 / DualSense | USB or Bluetooth | Not directly | Wrap with Steam Input or DS4Windows |
+| Switch Pro Controller | Bluetooth | Not directly | Use Steam Input or a wrapper tool |
+
+The pattern is simple. Xbox-style pads and third-party pads with an XInput mode are recognized immediately. Sony and Nintendo pads speak a different protocol, so Windows needs help presenting them as XInput before the game will see them.
+
+## How to Set Up Pokemon Uranium Controller Support
+
+Setup takes about two minutes once you know the order of operations. The most common mistake is launching the game before the pad is connected, which can leave the game looking for input from a device that does not exist yet.
+
+| Step | Action | Why it matters |
+|---|---|---|
+| 1 | Connect the controller and let Windows finish driver setup | The game scans for pads at launch |
+| 2 | Confirm the pad is detected in Windows' game controller settings | Rules out cable and driver problems early |
+| 3 | Launch Pokemon Uranium | Input devices are registered on startup |
+| 4 | Open the pause menu and check the Options screen | Vibration and input settings live here |
+| 5 | Test with a battle and the party menu | Verifies both menu and field input |
+| 6 | Relaunch if nothing responds | Forces the game to re-scan for the pad |
+
+### Path A: Xbox-Style XInput Controller
+
+Plug in, wait for the driver chime, launch the game, and play. If the pad is recognized in Windows, the game should pick it up with no further work. This is the smoothest route to working Pokemon Uranium controller support.
+
+### Path B: PlayStation or Switch Controller
+
+You have two practical options. Steam Input is the easiest if you have Steam installed — add the game as a non-Steam shortcut, then enable controller support for that entry. DS4Windows is the alternative; it creates a virtual Xbox pad that the game reads as XInput. Either way, close the other tool before launching to avoid double input.
+
+### Path C: Older DirectInput Pads
+
+If your controller predates XInput, a keyboard-to-gamepad remapper is still the answer. Tools such as reWASD let you build a custom config that maps stick movement and buttons onto the game's keyboard commands, which is exactly the use case their Pokemon Uranium controller support profile page describes. Community-made Companion profiles on the Steam Workshop take a similar approach, and one of them even maps auto-run to the X button inside the pause menu.
+
+## Button Mapping, Vibration, and Remapping Options
+
+Here is where players hit the most friction. Community forum threads going back years ask the same question: is there a way to remap buttons for controller input? The answer depends on your build and your pad, but the table below covers the typical layout players report.
+
+| Action | Keyboard default | Typical gamepad button |
+|---|---|---|
+| Move | Arrow keys | Left stick / D-pad |
+| Confirm, talk, select | Z or Enter | A |
+| Cancel, back, close menu | X or Esc | B |
+| Open pause menu | Esc or a menu key | Start |
+| Run | Shift (held) | Often mapped to a shoulder button or stick click |
+| Vibration toggle | — | Found in the Options screen |
+
+Two things are worth knowing. First, if your pad supports vibration, enable it in the Options screen — the 2023 update added rumble, but it can be switched off. Second, if your game build does not expose an in-game remapping screen, a remapper handles it: assign the keys you want to the buttons you want, save the profile, and launch the game through the tool.
+
+| Remapping tool | Best for | Difficulty | Rumble passthrough |
+|---|---|---|---|
+| Built-in Options screen | Minor tweaks | Very easy | Yes |
+| Steam Input | DualSense, Switch Pro, custom layouts | Moderate | Partial |
+| DS4Windows | Sony pads on Windows | Moderate | Yes |
+| reWASD / Companion profiles | DirectInput pads, macros, auto-run toggles | Easy to moderate | Varies |
+
+## Troubleshooting Common Pokemon Uranium Controller Support Issues
+
+Most problems fall into a handful of categories. Work down this table before assuming your pad is incompatible.
+
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| Game ignores the pad entirely | Pad is not in XInput mode | Flip the mode switch or use DS4Windows |
+| Buttons are swapped or odd | Layout mismatch between pad and game | Remap in Options or through a remapper |
+| Every press registers twice | Two input layers active at once | Disable Steam Input or close the remapper |
+| Movement drifts on its own | Stick wear or a dead zone that is too small | Increase the dead zone in your remapper |
+| No vibration | Rumble disabled or unsupported pad | Enable it in Options; check the pad's spec |
+| Works in menus, not in battle | Focus lost to a background window | Click the game window, then retest |
+
+A few habits prevent most of these issues. Connect the pad before launching, run only one input tool at a time, and keep a single saved profile you can reload after a Windows update. If the game still refuses to see the controller, test it in another title to confirm the hardware itself is fine.
+
+## FAQ
+
+**Does Pokemon Uranium have official controller support?**
+Yes. The game's 2023 patch notes added built-in support for any XInput-compatible controller, along with vibration. Before that update, Pokemon Uranium controller support relied on third-party remapping tools and community-made profiles.
+
+**Can I use a PS5 DualSense or Switch Pro Controller?**
+Not directly, because neither pad speaks XInput. Wrap them with Steam Input or DS4Windows so Windows presents them as an Xbox-style pad, then launch the game. Players report this works well once only one tool is active.
+
+**How do I remap buttons for Pokemon Uranium controller support?**
+Check the in-game Options screen first — some builds expose input settings there. If yours does not, use a remapper such as Steam Input, DS4Windows, or a keyboard-to-gamepad utility, and save the layout as a profile you can reload.
+
+**Why does my controller rumble not work?**
+Vibration was added with the official support update, so confirm you are on a current build and that rumble is enabled in the Options screen. Older pads and some third-party models do not support vibration at all, and remapped DirectInput pads usually lose it.
+
+**Is a controller better than a keyboard for Uranium?**
+For most players, yes. Movement and battle menus map naturally to a D-pad and two face buttons, and long sessions are easier on your hands. Keyboard still wins for anyone who prefers precise menu shortcuts or plays on a laptop without a spare USB port.

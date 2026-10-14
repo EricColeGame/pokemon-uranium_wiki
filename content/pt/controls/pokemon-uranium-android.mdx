@@ -1,0 +1,119 @@
+export const metadata = {
+  title: "Pokemon Uranium Android: Guia completo de controles para jogar com toque e gamepad",
+  description: "Saiba como funcionam as configurações de Pokemon Uranium Android, dos controles de toque do JoiPlay ao mapeamento de gamepad, layouts de botões e correções para problemas comuns de entrada.",
+  category: "controls",
+  date: "2026-10-14",
+}
+
+## Por que os controles são decisivos para Pokemon Uranium no Android
+
+Executar configurações de Pokemon Uranium Android tem menos a ver com potência bruta do que com uma coisa: entrada. Uranium foi feito para um teclado, então qualquer configuração de Pokemon Uranium Android — um runtime no estilo JoiPlay, uma camada de emulação do Windows ou streaming de um PC — depende de quão bem você traduz essas teclas para uma tela de toque ou um controle. Isso importa porque o jogo é realmente grande: 8 ginásios, 13 cidades, 7 missões secundárias opcionais e mais de 190 espécies capturáveis, de acordo com a wiki da comunidade. Um layout desajeitado transforma tudo isso em atrito.
+
+Se você nunca configurou isso antes, aqui está a versão resumida. Uranium é um projeto de RPG Maker feito por fãs, com Pokémon Essentials no núcleo, lançado para Windows e nunca portado. Ele espera teclas de seta para andar, uma tecla de confirmação para interagir e uma tecla de cancelamento para abrir menus. No celular, essas expectativas se tornam um problema que você precisa resolver. Sua camada de controle — não o jogo em si — decide se uma batalha de ginásio parece tensa ou tediosa.
+
+### Não há porte oficial para Android — o que isso significa para você
+
+Não existe um lançamento oficial de Pokemon Uranium para Android, e nada sugere que um esteja a caminho. O lar mantido pela comunidade para o jogo é a [página de download da Wiki de Pokémon Uranium](https://pokemon-uranium.fandom.com/wiki/Download), onde você pode baixar a versão atual, ler as notas de atualização e confirmar se está na versão mais recente usando a opção "Check for Updates" no jogo. Tudo relacionado ao Android vem de ferramentas e soluções criadas por jogadores, e é por isso que os relatos da comunidade variam tanto de um dispositivo para outro. Trate qualquer guia de configuração, incluindo este, como um ponto de partida, não como uma promessa.
+
+## Como as pessoas realmente jogam Pokemon Uranium no Android
+
+Existem quatro caminhos realistas, e cada um produz uma sensação de controle muito diferente. A escolha certa depende do chipset do seu celular, de quanta paciência você tem para configurar e se você já tem um controle.
+
+| Método | Como funciona | Dificuldade de configuração | Sensação de controle | Melhor para |
+|---|---|---|---|---|
+| Runtime de RPG Maker no estilo JoiPlay | Executa os arquivos do jogo nativamente no Android com uma camada de plugins | Moderada | Boa depois de mapeado; prioriza toque | Maioria dos jogadores |
+| Emulação do Windows (apps baseados em Wine) | Executa a versão real para Windows dentro de um contêiner de compatibilidade | Alta | Excelente com um controle | Celulares topo de linha, entusiastas de ajustes |
+| Streaming do seu próprio PC | Seu PC executa o jogo; seu celular é apenas uma tela e um dispositivo de entrada | Moderada | Depende totalmente da qualidade do Wi-Fi | Jogadores com um PC gamer |
+| Espelhamento de tela / área de trabalho remota | Espelha uma sessão existente do PC no seu celular | Baixa | Lag perceptível para entradas com timing | Conferir um save, não batalhar |
+
+Uma regra rápida de decisão: para a maioria dos jogadores de Pokemon Uranium Android, a rota do runtime é a escolha pragmática se você quer jogar sem tocar em um computador. Se você tem um controle e um celular topo de linha, a emulação do Windows entrega a versão mais fiel do jogo original. O streaming é excelente em uma rede estável de 5 GHz e sofrível em uma rede congestionada.
+
+## Os mapeamentos de teclado que você está traduzindo
+
+Antes de mapear um único botão, saiba o que está mapeando. A tabela abaixo reflete os mapeamentos que a maioria dos fangames baseados em Pokémon Essentials usa por padrão, e eles correspondem ao que os jogadores descrevem em tópicos da comunidade. Sua versão pode diferir um pouco, então verifique no jogo antes de montar todo um layout com base nisso.
+
+| Entrada no PC | Ação no jogo | Mapeamento típico no Android |
+|---|---|---|
+| Teclas de seta | Andar, navegar pelos menus | Zona do D-pad, polegar esquerdo |
+| Z ou Enter | Confirmar, falar, interagir | Botão A, polegar direito |
+| X ou Escape | Cancelar, abrir menu | Botão B, polegar direito |
+| Shift (segurar) | Correr | Alternância ou botão de ombro |
+| F1 | Opções / configurações | Botão pequeno de menu, borda superior |
+| F5 | Redimensionar janela | Ignorar — não é útil no celular |
+| F12 | Soft reset | Opcional, gesto de toque duplo |
+
+Um detalhe confunde quase todo mundo: a função de correr geralmente é uma tecla mantida pressionada, não uma alternância. Segurar um botão virtual enquanto você direciona com o outro polegar é realmente desconfortável, então a maioria dos jogadores remapeia correr para uma alternância ou move para um botão de ombro no controle.
+
+## Controles de toque: configuração passo a passo para Pokemon Uranium Android
+
+O toque é a abordagem padrão para a maioria das pessoas e funciona bem quando o layout é sensato. O fluxo geral é assim.
+
+1. Instale um app Android que consiga executar projetos da era RPG Maker XP com um plugin de Pokémon Essentials. JoiPlay mais o plugin de RPG Maker dele é a escolha comum da comunidade.
+2. Copie sua própria cópia obtida legalmente da pasta do jogo para o armazenamento interno do celular — não para uma pasta na nuvem que é desmontada no meio da sessão.
+3. Adicione o jogo dentro do app e aponte para o executável ou o arquivo de configuração do jogo.
+4. Ative a sobreposição de teclado na tela para que botões virtuais apareçam sobre o jogo.
+5. Mapeie cada botão virtual para a tecla de teclado listada na tabela acima.
+6. Teste primeiro no mapa aberto: ande em todas as quatro direções, abra o menu e fale com um NPC.
+7. Depois teste em uma batalha, onde confirmar e cancelar são pressionados o tempo todo.
+8. Salve seu layout como um perfil nomeado para que uma atualização do app não o apague.
+
+| Zona da tela | Botões | Por que funciona |
+|---|---|---|
+| Canto inferior esquerdo | D-pad de quatro direções | Arco natural de movimento do polegar esquerdo |
+| Canto inferior direito | A (confirmar) e B (cancelar) | As duas entradas mais pressionadas no jogo |
+| Logo acima de A/B | Alternância de correr | Alcançável sem mover muito o polegar |
+| Canto superior direito | Menu / save state | Deliberadamente fora do caminho durante o jogo |
+| Canto superior esquerdo | Avanço rápido, se compatível | Útil para grind, raramente tocado fora isso |
+
+### Ajustando a sobreposição na tela
+
+- Defina a opacidade entre cerca de 40% e 60% para que os botões fiquem visíveis sem esconder as caixas de diálogo.
+- Dimensione os botões para cerca de 12–15% da altura da tela; qualquer coisa menor causa toques perdidos em batalha.
+- Deixe um espaço visível entre o D-pad e o conjunto A/B para que um passo diagonal nunca seja registrado como confirmação.
+- Ative o feedback tátil se o seu app oferecer suporte — uma vibração curta confirma a entrada sem você precisar olhar para baixo.
+- Ative qualquer opção de "entrada deslizante" ou diagonal para que rolar o polegar possa registrar duas direções ao mesmo tempo.
+- Desloque a sobreposição inteira um pouco mais para cima do que parece natural; a pegada do celular muda durante sessões longas.
+
+## Mapeamento de gamepad e solução de problemas de controle
+
+Um controle Bluetooth é o maior upgrade de qualidade de vida para jogar Pokemon Uranium Android. Ele elimina a obstrução do polegar, oferece feedback tátil real e faz entradas mantidas, como correr, parecerem naturais em vez de desconfortáveis.
+
+### Layout recomendado para o controle
+
+| Entrada no controle | Ação no jogo | Observações |
+|---|---|---|
+| D-pad | Movimento | Mais limpo que o analógico em mapas baseados em grade |
+| A / Cross | Confirmar, interagir | Espelha a tecla Z do teclado |
+| B / Circle | Cancelar, menu | Espelha a tecla X do teclado |
+| X / Square ou L1 | Correr | Botões de ombro são mais fáceis de manter pressionados |
+| Start / Plus | Pausar, menu | Também útil para save states |
+| R2 / ZR | Avanço rápido, se compatível | Ótimo para grindar rotas |
+
+Dicas de pareamento: conecte o controle antes de iniciar o jogo para que a camada de entrada o detecte imediatamente. Prefira um dongle de 2,4 GHz ou conexão com fio quando seu controle oferecer suporte, e evite usar áudio Bluetooth ao mesmo tempo — ele compete pela mesma largura de banda e adiciona lag de entrada perceptível.
+
+### Problemas comuns de controle e correções
+
+| Sintoma | Causa provável | Correção |
+|---|---|---|
+| O personagem continua andando depois que você solta | Evento de tecla presa ou toque fantasma | Remapeie o botão, reinicie o app, recalibre |
+| Diagonais não registram | Zona do D-pad pequena demais ou 8 direções desativadas | Aumente a zona, ative entrada diagonal/deslizante |
+| Correr nunca ativa | Tecla mantida mapeada para um botão de toque | Mude correr para uma alternância ou botão de ombro |
+| Botões parecem atrasados em batalha | Queda de frames por apps em segundo plano | Feche apps, reduza a escala de renderização, ative o modo de desempenho |
+| Menu abre aleatoriamente | Palma ou toque acidental | Mova o botão de menu para um canto superior com margem |
+| Controle pareia, mas não faz nada | Modo de entrada errado (XInput vs. DirectInput) | Troque os modos no app e remapeie |
+
+Se uma correção não funcionar, o culpado geralmente é a leitura de entrada do jogo, não o seu layout. Reduza a resolução do runtime um pouco — frames mais suaves muitas vezes resolvem problemas de entrada que nenhum remapeamento resolveria.
+
+## Perguntas frequentes
+
+**Existe uma versão oficial de Pokemon Uranium para Android?**
+Não. Uranium foi lançado para Windows e nunca recebeu um porte oficial para celular. Toda configuração de Pokemon Uranium Android que você vê online é uma solução da comunidade, então os resultados variam conforme o modelo do celular e a versão do app.
+
+**Qual é o melhor método de controle para jogar no celular?**
+Um controle Bluetooth ganha em conforto e precisão. Se você prefere toque, gaste dez minutos montando uma sobreposição adequada com um D-pad grande e botões de confirmar e cancelar claramente separados — o esforço compensa ao longo de dezenas de horas de jogo.
+
+**Preciso de um celular potente para jogar?**
+Não necessariamente. Um app no estilo runtime que executa os arquivos do jogo diretamente é muito mais leve do que rodar a versão completa para Windows dentro de um contêiner de emulação. Celulares intermediários lidam bem com a rota mais leve, enquanto a rota mais pesada se beneficia de um chip topo de linha.
+
+**Por que meus controles param de responder no meio da batalha?**
+Normalmente é desempenho, não mapeamento. Batalhas renderizam mais sprites e efeitos do que o mapa aberto, então quedas de frames podem engolir entradas. Feche apps em segundo plano, reduza a escala de renderização e teste de novo antes de refazer seu layout.
